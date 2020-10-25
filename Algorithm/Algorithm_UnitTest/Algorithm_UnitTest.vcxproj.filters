@@ -35,5 +35,8 @@
     <ClCompile Include="Str\01_Test_ContainsNearbyDuplicate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Str\02_Test_ExcelSheetColumnTitle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
