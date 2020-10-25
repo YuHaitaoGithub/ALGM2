@@ -21,6 +21,9 @@
     <ClInclude Include="Include\02_ExcelSheetColumnTitle.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Include\03_IsUgly.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp">
@@ -30,6 +33,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Str\02_ExcelSheetColumnTitle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Str\03_IsUgly.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
