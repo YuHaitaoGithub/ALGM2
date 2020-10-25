@@ -81,6 +81,8 @@
     <ClInclude Include="Include\01_ContainsNearbyDuplicate.h" />
     <ClInclude Include="Include\02_ExcelSheetColumnTitle.h" />
     <ClInclude Include="Include\03_IsUgly.h" />
+    <ClInclude Include="Include\04_IsPalindrome.h" />
+    <ClInclude Include="Str\04_IsPalindrome.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp" />
