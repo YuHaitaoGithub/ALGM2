@@ -78,6 +78,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Include\01_ContainsNearbyDuplicate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp" />
+    <ClCompile Include="Str\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
