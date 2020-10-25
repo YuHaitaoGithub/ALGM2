@@ -2,6 +2,7 @@
 #include "..\Include\01_ContainsNearbyDuplicate.h"
 bool ContainsNearbyDuplicate(int* nums, int numsSize, int k)
 {
+	if (k < 0)return false;
 	if (numsSize <= k)//判断数组长度是否小于k
 	{
 		for (int i = 0; i < numsSize; i++)
