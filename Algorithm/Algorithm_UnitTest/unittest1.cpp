@@ -17,7 +17,7 @@ namespace Algorithm_UnitTest
 		TEST_METHOD(TestMethod1)
 		{
 			// TODO:  在此输入测试代码
-			char *filename = "..\\Algorithm\\config\\01_ContainsNearbyDuplicate.ini";
+			char *filename = "..\\Algorithm\\Config\\01_ContainsNearbyDuplicate.ini";
 			char *numsname = "Array";//数组名
 			char *keyname = "Key";
 			char *key1 = "Output";
@@ -52,7 +52,7 @@ namespace Algorithm_UnitTest
 		}
 		TEST_METHOD(TestMethod2)
 		{
-			char *filename = "..\\Algorithm\\config\\02_ExcelSheetColumnTitle.ini";
+			char *filename = "..\\Algorithm\\Config\\02_ExcelSheetColumnTitle.ini";
 			char *keyname = "Input";
 			char *key2 = "Output";
 
@@ -73,7 +73,7 @@ namespace Algorithm_UnitTest
 				}
 				time = 0;
 				int len = strlen(section);
-				Assert::IsNotNull(section);//检测section
+				//Assert::IsNotNull(section);//检测section
 
 				int b = Num_Juage(section,keyname,filename);
 				
@@ -86,14 +86,18 @@ namespace Algorithm_UnitTest
 				}
 				char buffer[100] = {};
 				GetPrivateProfileStringA(section, key2, NULL, buffer, sizeof(buffer), filename);
-				bool t;
+				int t = 0;
+				int f = 0;
 				for (int x = 0; buffer[x] != '\0'; x++)
 				{
 					if (buffer[x] == ' ');
-					else if (buffer[x] != vaule[x])t = false;
-						
+					else 
+					{
+						t = (int)(buffer[x]) + t;
+					}
+					f = (int)(vaule[x]) + f;
 				}
-				Assert::IsFalse(t);
+				Assert::AreEqual(t,f);
 				a = a + len + 1;
 				memset(section, 0, sizeof(section));
 			}
