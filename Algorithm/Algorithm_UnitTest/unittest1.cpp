@@ -142,6 +142,7 @@ namespace Algorithm_UnitTest
 				Assert::AreEqual(rt, tag);
 				a = a + len + 1;
 				memset(section, 0, sizeof(section));
+
 			}
 
 		}
