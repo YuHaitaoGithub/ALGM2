@@ -79,9 +79,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Include\01_ContainsNearbyDuplicate.h" />
+    <ClInclude Include="Include\02_ExcelSheetColumnTitle.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp" />
+    <ClCompile Include="Str\02_ExcelSheetColumnTitle.cpp" />
     <ClCompile Include="Str\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
