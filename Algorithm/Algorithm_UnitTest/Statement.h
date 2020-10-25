@@ -8,3 +8,6 @@ int Num_Juage(char *section, char *keyname, char *filename);
 
 /*第三题*/
 int Num3_Juage(char *section, char *keyname, char *filename);
+
+/*第四题*/
+int Num4_Juage(char *section, char *keyname, char *filename);

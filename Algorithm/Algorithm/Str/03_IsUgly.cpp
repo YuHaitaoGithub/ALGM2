@@ -16,3 +16,6 @@ bool IsUgly(int num)
 	// 1 ÊÇ³óÊı
 	return num == 1;
 }
+
+
+
