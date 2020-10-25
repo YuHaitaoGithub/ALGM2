@@ -27,9 +27,6 @@
     <ClInclude Include="Include\04_IsPalindrome.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Str\04_IsPalindrome.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp">
@@ -42,6 +39,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Str\03_IsUgly.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Str\04_IsPalindrome.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

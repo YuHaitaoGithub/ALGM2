@@ -6,7 +6,7 @@ bool  IsPalindrome(int num)
 {
 	char vaule[MAX_LEN] = { '\0' };
 	char vaules[MAX_LEN] = { '\0' };
-	if (num <= 0)return vaule;
+	if (num < 0)return false;
 	int i = 0;
 	int tag = 0;
 	while (num)
