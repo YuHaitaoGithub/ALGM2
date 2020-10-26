@@ -60,7 +60,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>..\Algorithm\Debug\01_ContainsNearbyDuplicate.obj;..\Algorithm\Debug\02_ExcelSheetColumnTitle.obj;..\Algorithm\Debug\03_IsUgly.obj;..\Algorithm\Debug\04_IsPalindrome.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\Algorithm\Debug\01_ContainsNearbyDuplicate.obj;..\Algorithm\Debug\02_ExcelSheetColumnTitle.obj;..\Algorithm\Debug\03_IsUgly.obj;..\Algorithm\Debug\04_IsPalindrome.obj;..\Algorithm\Debug\06_ContainsDuplicate;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -96,6 +96,7 @@
     <ClCompile Include="Str\02_Test_ExcelSheetColumnTitle.cpp" />
     <ClCompile Include="Str\03_Test_IsUgly.cpp" />
     <ClCompile Include="Str\04_Test_IsPalindrome.cpp" />
+    <ClCompile Include="Str\06_Test_ContainsDuplicate.cpp" />
     <ClCompile Include="unittest1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
