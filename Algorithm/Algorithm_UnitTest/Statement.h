@@ -11,3 +11,7 @@ int Num3_Juage(char *section, char *keyname, char *filename);
 
 /*第四题*/
 int Num4_Juage(char *section, char *keyname, char *filename);
+
+/*第六题*/
+
+bool Nums_Juage(char *section, char *numsname, char *filename);

@@ -44,5 +44,8 @@
     <ClCompile Include="Str\04_Test_IsPalindrome.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Str\06_Test_ContainsDuplicate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
