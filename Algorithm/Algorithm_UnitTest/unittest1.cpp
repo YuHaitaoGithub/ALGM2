@@ -79,13 +79,16 @@ namespace Algorithm_UnitTest
 
 				int b = Num_Juage(section,keyname,filename);
 				
+				if (b == -100)Logger::WriteMessage("越界");
 
 				char *p = ExcelSheetColumnTitle(b);
+				
 				char vaule[MAX_LINE] = { '\0' };
 				for (int i = 0; p[i] != '\0'; i++)
 				{
 					vaule[i] = p[i];
 				}
+				if (vaule[0] == '\0')Logger::WriteMessage("小于等于零");
 				char buffer[100] = {};
 				GetPrivateProfileStringA(section, key2, NULL, buffer, sizeof(buffer), filename);
 				int t = 0;
@@ -129,6 +132,8 @@ namespace Algorithm_UnitTest
 				int len = strlen(section);
 
 				int val = Num3_Juage(section, keyname, filename);
+				if (val == 0)Logger::WriteMessage("越界");
+
 				bool r = IsUgly(val);
 				int rt = 0;
 				if (r == true)rt = 1;
@@ -172,6 +177,8 @@ namespace Algorithm_UnitTest
 				int len = strlen(section);
 
 				int num = Num4_Juage(section, keyname, filename);
+				if (num == -1)Logger::WriteMessage("越界");
+
 				bool r = IsPalindrome(num);
 				int rt = 0;
 				if (r == true)rt = 1;

@@ -20,7 +20,7 @@ int Num_Juage(char *section,char *keyname,char *filename)
 			}
 			else
 			{
-				l = 0;
+				l = -100;
 			}
 			break;
 		}
