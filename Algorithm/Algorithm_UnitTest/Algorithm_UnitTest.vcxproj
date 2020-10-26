@@ -83,6 +83,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Definition.h" />
     <ClInclude Include="Statement.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -97,6 +98,7 @@
     <ClCompile Include="Str\03_Test_IsUgly.cpp" />
     <ClCompile Include="Str\04_Test_IsPalindrome.cpp" />
     <ClCompile Include="Str\06_Test_ContainsDuplicate.cpp" />
+    <ClCompile Include="Str\08_Test_HammingWeight.cpp" />
     <ClCompile Include="unittest1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

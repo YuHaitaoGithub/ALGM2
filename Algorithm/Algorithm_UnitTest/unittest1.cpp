@@ -2,13 +2,7 @@
 #include "CppUnitTest.h"
 #include "Statement.h"
 #include"Windows.h"
-#include "..\Algorithm\Include\02_ExcelSheetColumnTitle.h"
-#include "..\Algorithm\Include\03_IsUgly.h"
-#include"..\Algorithm\Include\04_IsPalindrome.h"
-#include"..\Algorithm\Include\06_ContainsDuplicate.h"
-
-#define MAX_LINE 1024
-
+#include "Definition.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 

@@ -30,6 +30,9 @@
     <ClInclude Include="Include\06_ContainsDuplicate.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Include\08_HammingWeight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp">
@@ -48,6 +51,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Str\06_ContainsDuplicate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Str\08_HammingWeight.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
