@@ -2,7 +2,7 @@
 #include "CppUnitTest.h"
 #include "Statement.h"
 #include"Windows.h"
-#include "Definition.h"
+#define MAX_LINE 1024
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -10,16 +10,16 @@ namespace Algorithm_UnitTest
 {		
 	TEST_CLASS(UnitTest1)
 	{
+		
 	public:
 		
 		TEST_METHOD(TestMethod1)
 		{
-			// TODO:  在此输入测试代码
 			char *filename = "..\\Algorithm\\Config\\01_ContainsNearbyDuplicate.ini";
-			char *numsname = "Array";//数组名
-			char *keyname = "Key";
-			char *key1 = "Output";
-			char section1[MAX_LINE] = { '\0' };//section1--该文件下所有节名保存数组
+			char *numsname = "Array";//数组键名
+			char *keyname = "Key";//输入键名
+			char *key1 = "Output";//输出键名
+			char section1[MAX_LINE] = { '\0' };//section1--保存该文件下所有节名保存数组
 			int a = 0;
 			GetPrivateProfileSectionNamesA(section1, MAX_LINE, filename);
 			char section[MAX_LINE] = { '\0' };//保存单个节名数组
@@ -27,25 +27,18 @@ namespace Algorithm_UnitTest
 			while ((section1[a] != '\0') || (section1[a + 1] != '\0'))
 			{
 				for (int k = a; section1[k] != '\0'; k++)
-				{
-					if (section1[k] != ' ')
-					{
-						section[time] = section1[k];
-						time++;
-					}
-				}
+					section[time++] = section1[k];
+				Assert::IsNotNull(section);//判断是否节名数组为空
+
+				/*判断函数输出是true还是false*/
+				bool r = Read_Input(section, numsname, filename, keyname);
+				int ret1 = r;
+				int ret2 = Read_Output(section, key1, filename);//读取案例的输出
+				Assert::AreEqual(ret1, ret2);
+
+				a = a + time + 1;
 				time = 0;
-				int len = strlen(section);//判断节名是否读取到
-				//Assert::IsNotNull(section);
-
-				bool r = Key_Juage(section, numsname, filename, keyname);//判断函数输出是true还是false
-				//Assert::IsTrue(r);
-
-				int t = Write_Juage(r, section, key1, filename);//判断结果写入是否成功
-				if(t == 1)Assert::AreEqual(t, 1);
-				else Assert::AreEqual(t, 0);
-				a = a + len + 1;
-				memset(section, 0, sizeof(section));
+				memset(section, 0, sizeof(section));//初始化数组
 			}
 		}
 		TEST_METHOD(TestMethod2)
