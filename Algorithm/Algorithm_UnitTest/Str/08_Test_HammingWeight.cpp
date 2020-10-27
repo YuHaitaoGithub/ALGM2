@@ -1,11 +1,12 @@
 #include "..\Statement.h"
 #include "..\stdafx.h"
 #include "Windows.h"
+#include "limits.h"
 
-int Num4_Juage(char *section, char *keyname, char *filename)
+unsigned int Num8_Juage(char *section, char *keyname, char *filename)
 {
 	char key[20] = { '\0' };//
-	int l = 0;
+	unsigned int  l = 0;
 	GetPrivateProfileStringA(section, keyname, NULL, key, 20, filename);
 	int j = 0;
 	int t = 0;
@@ -13,13 +14,13 @@ int Num4_Juage(char *section, char *keyname, char *filename)
 	{
 		if ((key[j] != ',') && (key[j] != ' '))
 		{
-			if ((atoll(&key[j]) >= INT_MIN) && (atoll(&key[j]) <= INT_MAX))
+			if ((atoll(&key[j]) >= 0) && (atoll(&key[j]) <= UINT_MAX))
 			{
-				l = atoi(&key[j]);
+				l = atoll(&key[j]);
 			}
 			else
 			{
-				l = -1;
+				l = 0;
 			}
 			break;
 		}

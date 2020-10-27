@@ -1,4 +1,6 @@
 #pragma once
+
+
 /*第一题*/
 bool Key_Juage(char *section, char *numsname, char *filename, char *keyname);
 int Write_Juage(bool r, char *section, char *key1, char *filename);
@@ -15,3 +17,6 @@ int Num4_Juage(char *section, char *keyname, char *filename);
 /*第六题*/
 
 bool Nums_Juage(char *section, char *numsname, char *filename);
+
+/*第八题*/
+unsigned int Num8_Juage(char *section, char *keyname, char *filename);

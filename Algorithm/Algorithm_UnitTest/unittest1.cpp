@@ -2,13 +2,7 @@
 #include "CppUnitTest.h"
 #include "Statement.h"
 #include"Windows.h"
-#include "..\Algorithm\Include\02_ExcelSheetColumnTitle.h"
-#include "..\Algorithm\Include\03_IsUgly.h"
-#include"..\Algorithm\Include\04_IsPalindrome.h"
-#include"..\Algorithm\Include\06_ContainsDuplicate.h"
-
-#define MAX_LINE 1024
-
+#include "Definition.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -240,6 +234,40 @@ namespace Algorithm_UnitTest
 			}
 			
 			
+		}
+		TEST_METHOD(TestMethod8)
+		{
+			
+			char *filename = "..\\Algorithm\\Config\\08_HammingWeight.ini";
+			char *keyname = "Input";
+			char *key2 = "Output";
+
+			char section1[MAX_LINE] = { '\0' };//section1--该文件下所有节名保存数组
+			int a = 0;
+			GetPrivateProfileSectionNamesA(section1, MAX_LINE, filename);
+			char section[MAX_LINE] = { '\0' };//保存单个节名数组
+			int time = 0;
+			while ((section1[a] != '\0') || (section1[a + 1] != '\0'))
+			{
+				for (int k = a; section1[k] != '\0'; k++)
+				{
+					if (section1[k] != ' ')
+					{
+						section[time] = section1[k];
+						time++;
+					}
+				}
+				time = 0;
+				int len = strlen(section);
+				unsigned int ret = Num8_Juage(section, keyname, filename);
+
+				int f_ret = HammingWeight(ret);
+
+				int k = GetPrivateProfileIntA(section, key2, -1, filename);
+				Assert::AreEqual(f_ret, k);
+				a = a + len + 1;
+				memset(section, 0, sizeof(section));
+			}
 		}
 	};
 }

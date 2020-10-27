@@ -3,8 +3,7 @@
 #include"..\..\Algorithm\Include\01_ContainsNearbyDuplicate.h"
 #include "Windows.h"
 
-#define MAX_LINE 100
-
+#define MAX_LINE 200
 
 bool Key_Juage(char *section, char *numsname, char *filename, char *keyname)
 {

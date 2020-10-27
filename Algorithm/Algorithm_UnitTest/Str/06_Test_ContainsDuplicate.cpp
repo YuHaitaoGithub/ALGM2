@@ -1,9 +1,7 @@
 #include "..\Statement.h"
 #include "..\stdafx.h"
-#include"..\..\Algorithm\Include\06_ContainsDuplicate.h"
 #include "Windows.h"
-#define MAX_LINE 1024
-
+#define MAX_LINE 200
 
 bool Nums_Juage(char *section, char *numsname, char *filename)
 {

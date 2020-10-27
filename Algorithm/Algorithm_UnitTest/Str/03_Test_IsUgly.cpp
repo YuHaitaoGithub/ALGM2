@@ -1,6 +1,5 @@
 #include "..\Statement.h"
 #include "..\stdafx.h"
-#include"..\..\Algorithm\Include\03_IsUgly.h"
 #include "Windows.h"
 
 int Num3_Juage(char *section, char *keyname, char *filename)

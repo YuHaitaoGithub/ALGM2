@@ -24,6 +24,9 @@
     <ClInclude Include="Statement.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Definition.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -45,6 +48,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Str\06_Test_ContainsDuplicate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Str\08_Test_HammingWeight.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
