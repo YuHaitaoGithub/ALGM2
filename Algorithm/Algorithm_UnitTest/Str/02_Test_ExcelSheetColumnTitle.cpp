@@ -1,6 +1,5 @@
 #include "..\Statement.h"
 #include "..\stdafx.h"
-#include"..\..\Algorithm\Include\02_ExcelSheetColumnTitle.h"
 #include "Windows.h"
 
 int Num_Juage(char *section,char *keyname,char *filename)

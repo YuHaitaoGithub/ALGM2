@@ -1,6 +1,5 @@
 #include "..\Statement.h"
 #include "..\stdafx.h"
-#include"..\..\Algorithm\Include\04_IsPalindrome.h"
 #include "Windows.h"
 
 int Num4_Juage(char *section, char *keyname, char *filename)

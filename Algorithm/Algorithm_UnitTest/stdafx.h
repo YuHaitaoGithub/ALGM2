@@ -15,3 +15,4 @@
 #include "..\Algorithm\Include\03_IsUgly.h"
 #include"..\Algorithm\Include\04_IsPalindrome.h"
 #include"..\Algorithm\Include\06_ContainsDuplicate.h"
+#include"..\Algorithm\Include\08_HammingWeight.h"
