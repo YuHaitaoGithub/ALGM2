@@ -5,7 +5,6 @@
 bool  IsPalindrome(int num)
 {
 	char vaule[MAX_LEN] = { '\0' };
-	char vaules[MAX_LEN] = { '\0' };
 	if (num < 0)return false;
 	int i = 0;
 	int tag = 0;
@@ -16,18 +15,12 @@ bool  IsPalindrome(int num)
 		i++;
 		num = num / 10;
 	}
-	int len = strlen(vaule) - 1;
-	int j = 0;
-	while (vaule[j] != '\0')
+	i = i - 1;
+	int len = i / 2 + 1;
+	for (int k = 0; k < len; k++)
 	{
-		vaules[j] = vaule[len - j];
-		j++;
-	}
-	int len1 = strlen(vaules);
-	for (int k = 0; k < len1; k++)
-	{
-		if (vaules[k] == vaule[k]);
-		else return false;
+		if (vaule[i - k] != vaule[k])
+			return false;
 	}
 	return true;
 }

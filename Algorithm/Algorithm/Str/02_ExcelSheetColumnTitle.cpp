@@ -1,6 +1,6 @@
 #include "..\Include\02_ExcelSheetColumnTitle.h"
 #include "string.h"
-#define MAX_LEN  1024
+#define MAX_LEN  35
 char * ExcelSheetColumnTitle(int n)
 {
 	char vaule[MAX_LEN] = { '\0' };
@@ -22,12 +22,12 @@ char * ExcelSheetColumnTitle(int n)
 		}
 		i++;
 	}
-	int len = strlen(vaule) - 1;
+	i--;
 	char vaules[MAX_LEN] = { '\0' };
 	vaules[0] = '"';
-	for (int j = 0; j <= len; j++)
+	for (int j = 0; j <= i; j++)
 	{
-		vaules[len - j + 1] = vaule[j];
+		vaules[i - j + 1] = vaule[j];
 	}
 	vaules[strlen(vaules)] = '"';
 	return vaules;
