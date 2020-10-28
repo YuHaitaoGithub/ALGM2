@@ -3,17 +3,14 @@
 
 bool IsUgly(int num)
 {
-	if (num <= 0) return false;
+	if (num == 0) return false;
 	if (num == 1)return true;
-	int arr[3] = { 2, 3, 5 };
-	for (int i = 0; i < 3; i++)
-	{
-		while (num % arr[i] == 0)
-		{
-			num /= arr[i];
-		}
-	}
-	// 1 ÊÇ³óÊý
+	int i = 2;
+	while (num % i == 0)num /= i;
+	i++;
+	while (num % i == 0)num /= i;
+	i += 2;
+	while (num % i == 0)num /= i;
 	return num == 1;
 }
 
