@@ -2,18 +2,19 @@
 #include "string.h"
 #define MAX_LEN 100
 
-bool  IsPalindrome(int num)
+bool  IsPalindrome(int x)
 {
 	char vaule[MAX_LEN] = { '\0' };
-	if (num < 0)return false;
+	if (x < 0)return false;
+	if (x == 0)return true;
 	int i = 0;
 	int tag = 0;
-	while (num)
+	while (x)
 	{
-		tag = num % 10;
+		tag = x % 10;
 		vaule[i] = (char)('0' + tag);
 		i++;
-		num = num / 10;
+		x = x / 10;
 	}
 	i = i - 1;
 	int len = i / 2 + 1;

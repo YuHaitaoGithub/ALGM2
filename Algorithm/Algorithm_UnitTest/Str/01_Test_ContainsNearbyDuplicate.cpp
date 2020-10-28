@@ -1,7 +1,7 @@
 #include "..\Statement.h"
 #include "..\stdafx.h"
 #include"..\..\Algorithm\Include\01_ContainsNearbyDuplicate.h"
-#include "Windows.h"
+
 
 #define MAX_LINE 100
 

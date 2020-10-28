@@ -3,7 +3,7 @@
 
 bool IsUgly(int num)
 {
-	if (num <= 0) return false;
+	if (num == 0) return false;
 	if (num == 1)return true;
 	int i = 2;
 	while (num % i == 0)num /= i;

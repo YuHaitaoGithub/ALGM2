@@ -1,2 +1,2 @@
 #pragma once
-bool  IsPalindrome(int num);
+bool  IsPalindrome(int x);
