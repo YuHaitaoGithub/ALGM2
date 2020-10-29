@@ -29,6 +29,16 @@ void createBinTree(BinTree &binTree, int* array, int i)
 	createBinTree(binTree->right, array, 2 * i + 1);
 }
 
+void Freetree(BinTree &binTree)
+{
+	if (binTree != NULL)
+	{
+		Freetree(binTree->left);
+		Freetree(binTree->right);
+		binTree = NULL;
+		free(binTree);	//当左右子结点都为空时，调用free,释放空间
+	}
+}
 
 void Algm5_Test()
 {
@@ -91,5 +101,7 @@ void Algm5_Test()
 		a = a + time + 1;
 		time = 0;
 		memset(section, 0, sizeof(section));
+
+		Freetree(binTree);//释放第一个测试树的内存
 	}
 }
