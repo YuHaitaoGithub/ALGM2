@@ -17,3 +17,4 @@
 #include"..\Algorithm\Include\04_IsPalindrome.h"
 #include"..\Algorithm\Include\06_ContainsDuplicate.h"
 #include"..\Algorithm\Include\08_HammingWeight.h"
+#include "..\Algorithm\Include\05_MinDepth.h"
