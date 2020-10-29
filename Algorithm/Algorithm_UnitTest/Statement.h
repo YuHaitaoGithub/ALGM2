@@ -12,6 +12,10 @@ int Read_Num(char *section, char *keyname, char *filename);
 void Algm3_Test();
 /*第四题*/
 void Algm4_Test();
+
+/*第五题*/
+void Algm5_Test();
+
 /*第六题*/
 
 void Algm6_Test();

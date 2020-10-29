@@ -89,6 +89,10 @@ namespace Algorithm_UnitTest
 		{
 			Algm4_Test();
 		}
+		TEST_METHOD(TestMethod5)
+		{
+			Algm5_Test();
+		}
 		TEST_METHOD(TestMethod6)
 		{
 			Algm6_Test();
