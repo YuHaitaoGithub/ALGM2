@@ -25,3 +25,6 @@ void Algm7_Test();
 
 /*第八题*/
 void Algm8_Test();
+
+/*第九题*/
+void Algm9_Test();
