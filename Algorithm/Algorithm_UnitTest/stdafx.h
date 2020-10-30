@@ -18,3 +18,4 @@
 #include"..\Algorithm\Include\06_ContainsDuplicate.h"
 #include"..\Algorithm\Include\08_HammingWeight.h"
 #include "..\Algorithm\Include\05_MinDepth.h"
+#include "..\Algorithm\Include\07_MaxDepth.h"

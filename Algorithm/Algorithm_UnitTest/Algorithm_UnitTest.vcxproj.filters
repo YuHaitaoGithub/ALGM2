@@ -53,5 +53,8 @@
     <ClCompile Include="Str\05_Test_MinDepth.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Str\07_Test_MaxDepth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
