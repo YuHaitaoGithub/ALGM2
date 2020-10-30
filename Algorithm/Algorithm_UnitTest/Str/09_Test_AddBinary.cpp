@@ -34,19 +34,20 @@ void Algm9_Test()
 			if (buf1[t] != '"')buffer1[i++] = buf1[t];
 		}
 		int j = 0;
-		for (int t = 0; buf1[t] != '\0'; t++)
+		for (int t = 0; buf2[t] != '\0'; t++)
 		{
-			if (buf1[t] != '"')buffer2[j++] = buf1[t];
+			if (buf2[t] != '"')buffer2[j++] = buf2[t];
 		}
 
 		char *ret = AddBinary(buffer1, buffer2);
 
 		memset(buf2, 0, sizeof(buf2));
 		GetPrivateProfileStringA(section, output, NULL, buf2, MAX_LINE, filename);
-		int lenth = strlen(ret) > strlen(buf2) ? strlen(ret) : strlen(buf2);
+		int lenth = strlen(ret) < strlen(buf2) ? strlen(ret) : strlen(buf2);
+		j = 0;
 		for (int x = 0; x < lenth; x++)
 		{
-			if (buf2[x] != '"')Assert::AreSame(ret[x], buf2[x]);
+			if (buf2[x] != '"')Assert::AreEqual(ret[j++], buf2[x]);
 		}
 
 
