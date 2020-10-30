@@ -56,5 +56,8 @@
     <ClCompile Include="Str\07_Test_MaxDepth.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Str\09_Test_AddBinary.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
