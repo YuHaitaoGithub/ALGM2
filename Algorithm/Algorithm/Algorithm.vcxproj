@@ -84,6 +84,7 @@
     <ClInclude Include="Include\04_IsPalindrome.h" />
     <ClInclude Include="Include\05_MinDepth.h" />
     <ClInclude Include="Include\06_ContainsDuplicate.h" />
+    <ClInclude Include="Include\07_MaxDepth.h" />
     <ClInclude Include="Include\08_HammingWeight.h" />
     <ClInclude Include="Include\09_AddBinary.h" />
   </ItemGroup>
@@ -94,6 +95,7 @@
     <ClCompile Include="Str\04_IsPalindrome.cpp" />
     <ClCompile Include="Str\05_MinDepth.cpp" />
     <ClCompile Include="Str\06_ContainsDuplicate.cpp" />
+    <ClCompile Include="Str\07_MaxDepth.cpp" />
     <ClCompile Include="Str\08_HammingWeight.cpp" />
     <ClCompile Include="Str\09_AddBinary.cpp" />
     <ClCompile Include="Str\Main.cpp" />
