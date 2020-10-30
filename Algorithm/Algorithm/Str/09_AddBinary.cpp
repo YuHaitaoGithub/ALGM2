@@ -5,8 +5,8 @@ char * AddBinary(char * a, char * b)
 {
 	int lena = strlen(a);
 	int lenb = strlen(b);
-	if ((lena > 10000) || (lena < 1))return NULL;
-	if ((lenb > 10000) || (lenb < 1))return NULL;
+	if ((lena > 10000) || (lena < 1))return "0";
+	if ((lenb > 10000) || (lenb < 1))return "0";
 	
 	int maxlen = lena >= lenb ? lena : lenb;
 	int i, tempa, tempb, carry = 0;
