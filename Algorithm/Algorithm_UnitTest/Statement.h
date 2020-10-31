@@ -28,3 +28,6 @@ void Algm8_Test();
 
 /*第九题*/
 void Algm9_Test();
+
+/*第十一题*/
+void Algm11_Test();

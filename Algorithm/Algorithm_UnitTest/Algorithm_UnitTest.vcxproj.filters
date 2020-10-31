@@ -59,5 +59,8 @@
     <ClCompile Include="Str\09_Test_AddBinary.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Str\11_Test_CanWinNim.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

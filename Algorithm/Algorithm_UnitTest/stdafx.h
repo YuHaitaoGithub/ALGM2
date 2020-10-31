@@ -20,3 +20,4 @@
 #include "..\Algorithm\Include\07_MaxDepth.h"
 #include"..\Algorithm\Include\08_HammingWeight.h"
 #include "..\Algorithm\Include\09_AddBinary.h"
+#include "..\Algorithm\Include\11_CanWinNim.h"
