@@ -42,6 +42,9 @@
     <ClInclude Include="Include\07_MaxDepth.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Include\11_CanWinNim.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp">
@@ -72,6 +75,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Str\07_MaxDepth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Str\11_CanWinNim.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
