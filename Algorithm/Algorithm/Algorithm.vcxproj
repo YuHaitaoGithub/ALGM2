@@ -88,6 +88,7 @@
     <ClInclude Include="Include\08_HammingWeight.h" />
     <ClInclude Include="Include\09_AddBinary.h" />
     <ClInclude Include="Include\11_CanWinNim.h" />
+    <ClInclude Include="Include\12_IsValid.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp" />
@@ -100,6 +101,7 @@
     <ClCompile Include="Str\08_HammingWeight.cpp" />
     <ClCompile Include="Str\09_AddBinary.cpp" />
     <ClCompile Include="Str\11_CanWinNim.cpp" />
+    <ClCompile Include="Str\12_IsValid.cpp" />
     <ClCompile Include="Str\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

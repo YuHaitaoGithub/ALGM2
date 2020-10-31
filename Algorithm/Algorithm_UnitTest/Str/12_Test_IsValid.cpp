@@ -4,10 +4,10 @@
 #define MAX_LINE 1024
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-void Algm11_Test()
+void Algm12_Test()
 {
 
-	char *filename = "..\\Algorithm\\Config\\11_CanWinNim.ini";
+	char *filename = "..\\Algorithm\\Config\\12_IsValid.ini";
 	char *keyname = "Input";
 	char *key2 = "Output";
 
@@ -21,9 +21,15 @@ void Algm11_Test()
 		for (int k = a; section1[k] != '\0'; k++)
 			section[time++] = section1[k];
 
-		int ret = GetPrivateProfileIntA(section, keyname, 0, filename);
-
-		int f_ret = CanWinNim(ret);
+		char buf[200] = {};
+		char buff[200] = {};
+		int j = 0;
+		GetPrivateProfileStringA(section, keyname,NULL,buff,200,filename);
+		for (int i = 0; buff[i] != '\0'; i++)
+		{
+			if ((buf[i] == ',') || (buf[i] == '"'))buff[j++] = buf[++i];
+		}
+		int f_ret = IsValid(buff);
 
 		char buffer[100] = { '\0' };
 		GetPrivateProfileStringA(section, key2, NULL, buffer, sizeof(buffer), filename);
@@ -36,7 +42,5 @@ void Algm11_Test()
 		time = 0;
 		memset(section, 0, sizeof(section));
 	}
-	
-
 
 }
