@@ -21,3 +21,4 @@
 #include"..\Algorithm\Include\08_HammingWeight.h"
 #include "..\Algorithm\Include\09_AddBinary.h"
 #include "..\Algorithm\Include\11_CanWinNim.h"
+#include "..\Algorithm\Include\12_IsValid.h"

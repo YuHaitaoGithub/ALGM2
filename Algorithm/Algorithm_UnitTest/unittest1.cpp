@@ -113,6 +113,10 @@ namespace Algorithm_UnitTest
 		{
 			Algm11_Test();
 		}
+		TEST_METHOD(TestMethod12)
+		{
+			Algm12_Test();
+		}
 		
 	};
 }

@@ -45,6 +45,9 @@
     <ClInclude Include="Include\11_CanWinNim.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Include\12_IsValid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp">
@@ -78,6 +81,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Str\11_CanWinNim.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Str\12_IsValid.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

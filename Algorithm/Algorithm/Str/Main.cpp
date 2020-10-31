@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include "..\Include\11_CanWinNim.h"
+#include "..\Include\12_IsValid.h"
 #include "Windows.h"
 #include "stdio.h"
 #include "malloc.h"
@@ -10,10 +10,11 @@
 void main()
 {
 	//	Algm4_Test();
-	int n = 0;
-	while (scanf_s("%d", &n))
+	while (1)
 	{
-		printf("%d\n", CanWinNim(n));
+		char s[100] = {};
+		gets(s);
+		printf("%d\n", IsValid(s));
 	}
 	
 }
