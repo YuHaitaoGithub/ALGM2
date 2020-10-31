@@ -6,7 +6,7 @@
 
 int MyAtoi(char * s)
 {
-	if (s == NULL)return 0;
+	if (s[0] == '\0')return 0;
 	int a[12] = {};
 	char *p1 = "2147483648";
 	char *p2 = "2147483647";
@@ -25,7 +25,7 @@ int MyAtoi(char * s)
 			t = 0;
 			a[j++] = s[i] - '0';
 		}
-		else break;
+		else if(s[i] != '"')break;
 		if (j >= 12)break;
 	}
 	j--;

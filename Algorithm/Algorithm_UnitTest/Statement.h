@@ -34,3 +34,6 @@ void Algm11_Test();
 
 /*第十二题*/
 void Algm12_Test();
+
+/*第十三题*/
+void Algm13_Test();
