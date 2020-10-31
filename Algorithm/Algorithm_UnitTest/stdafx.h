@@ -22,3 +22,4 @@
 #include "..\Algorithm\Include\09_AddBinary.h"
 #include "..\Algorithm\Include\11_CanWinNim.h"
 #include "..\Algorithm\Include\12_IsValid.h"
+#include "..\Algorithm\Include\13_MyAtoi.h"
