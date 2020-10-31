@@ -9,7 +9,6 @@
 
 void main()
 {
-	//	Algm4_Test();
 	while (1)
 	{
 		char s[100] = {};
