@@ -1,6 +1,6 @@
 #include "..\Statement.h"
 #include "..\stdafx.h"
-#include "malloc.h"
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 #define MAX_LINE 1000
 

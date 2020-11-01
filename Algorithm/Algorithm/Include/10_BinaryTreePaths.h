@@ -1,3 +1,4 @@
 #pragma once
 
-char ** BinaryTreePaths(struct TreeNode* root, int* returnSize);
+extern "C"  char** BinaryTreePaths(struct TreeNode* root, int* returnSize);
+

@@ -68,5 +68,8 @@
     <ClCompile Include="Str\13_Test_MyAtoi.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Str\10_Test_BinaryTreePaths.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

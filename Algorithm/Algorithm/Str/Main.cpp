@@ -15,10 +15,10 @@ void main()
 		gets(s);
 		printf("%d\n", IsValid(s));
 	}*/
-	while (1)
-	{
-		char s[100] = {};
-		gets(s);
-		printf("%d\n",IsValid(s));
-	}
+	//while (1)
+	//{
+	//	char s[100] = {};
+	//	gets(s);
+	//	printf("%d\n",IsValid(s));
+	//}
 }
