@@ -24,10 +24,10 @@ void Algm12_Test()
 		char buf[200] = {};
 		char buff[200] = {};
 		int j = 0;
-		GetPrivateProfileStringA(section, keyname,NULL,buff,200,filename);
-		for (int i = 0; buff[i] != '\0'; i++)
+		GetPrivateProfileStringA(section, keyname,NULL,buf,200,filename);
+		for (int i = 0; buf[i] != '\0'; i++)
 		{
-			if ((buf[i] == ',') || (buf[i] == '"'))buff[j++] = buf[++i];
+			if ((buf[i] != ',') || (buf[i] != '"'))buff[j++] = buf[i];
 		}
 		int f_ret = IsValid(buff);
 
