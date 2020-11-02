@@ -25,5 +25,28 @@ bool IsValid(char *s)
 			j++; i = -1; tag = 0; //ÅĞ¶Ï±éÀúÊÇ·ñ½áÊø
 		}
 	}
-	return k >= 1;	
+	return k == 1;	
 }
+//bool IsValid(char *s)
+//{
+//	int len = strlen(s);
+//	if (len == 0)return false;
+//	if (len % 2 != 0)return false;
+//	char arr[100] = {};
+//	int tag = -1;
+//	for (int i = 0; i < len; i++)
+//	{
+//		if ((s[i] == '(') || (s[i] == '{') || (s[i] == '['))
+//		{
+//			tag++; arr[tag] = s[i];
+//		}
+//		else {
+//			if (tag == -1)return false;
+//			if (s[i] == ')'&&arr[tag] == '(' ||
+//				s[i] == '}'&&arr[tag] == '{' ||
+//				s[i] == ']'&&arr[tag] == '[')
+//				tag--;
+//		}
+//	}
+//	return tag == -1;
+//}

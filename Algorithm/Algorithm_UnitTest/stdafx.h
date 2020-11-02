@@ -25,3 +25,4 @@
 #include "..\Algorithm\Include\12_IsValid.h"
 #include "..\Algorithm\Include\13_MyAtoi.h"
 #include "..\Algorithm\Include\10_BinaryTreePaths.h"
+#include "..\Algorithm\Include\\14_SingleNumber.h"
