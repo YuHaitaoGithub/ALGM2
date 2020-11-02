@@ -26,3 +26,4 @@
 #include "..\Algorithm\Include\13_MyAtoi.h"
 #include "..\Algorithm\Include\10_BinaryTreePaths.h"
 #include "..\Algorithm\Include\\14_SingleNumber.h"
+#include "..\Algorithm\Include\16_ReverseBits.h"

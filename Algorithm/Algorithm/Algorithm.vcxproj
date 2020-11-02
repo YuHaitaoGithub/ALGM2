@@ -92,6 +92,8 @@
     <ClInclude Include="Include\12_IsValid.h" />
     <ClInclude Include="Include\13_MyAtoi.h" />
     <ClInclude Include="Include\14_SingleNumber.h" />
+    <ClInclude Include="Include\15_WordPattern.h" />
+    <ClInclude Include="Include\16_ReverseBits.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp" />
@@ -108,6 +110,8 @@
     <ClCompile Include="Str\12_IsValid.cpp" />
     <ClCompile Include="Str\13_MyAtoi.cpp" />
     <ClCompile Include="Str\14_SingleNumber.cpp" />
+    <ClCompile Include="Str\15_WordPattern.cpp" />
+    <ClCompile Include="Str\16_ReverseBits.cpp" />
     <ClCompile Include="Str\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
