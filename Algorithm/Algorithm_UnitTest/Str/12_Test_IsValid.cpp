@@ -21,14 +21,9 @@ void Algm12_Test()
 		for (int k = a; section1[k] != '\0'; k++)
 			section[time++] = section1[k];
 
-		char buf[200] = {};
 		char buff[200] = {};
-		int j = 0;
-		GetPrivateProfileStringA(section, keyname,NULL,buf,200,filename);
-		for (int i = 0; buf[i] != '\0'; i++)
-		{
-			if ((buf[i] != ',') || (buf[i] != '"'))buff[j++] = buf[i];
-		}
+		GetPrivateProfileStringA(section, keyname,NULL,buff,200,filename);
+		
 		int f_ret = IsValid(buff);
 
 		char buffer[100] = { '\0' };
