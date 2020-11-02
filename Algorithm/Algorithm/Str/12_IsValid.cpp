@@ -25,5 +25,5 @@ bool IsValid(char *s)
 			j++; i = -1; tag = 0; //ÅĞ¶Ï±éÀúÊÇ·ñ½áÊø
 		}
 	}
-	return k >= 1;	
+	return k == 1;	
 }

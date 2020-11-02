@@ -20,7 +20,6 @@ void Dfs(struct TreeNode* root, int* returnSize, char* temp, int index, char** r
 		(*returnSize)++;
 		return;
 	}
-
 	if (root->left){                 //µÝ¹é±éÀú×ó×ÓÊ÷
 		Dfs(root->left, returnSize, temp, index, res);
 	}
