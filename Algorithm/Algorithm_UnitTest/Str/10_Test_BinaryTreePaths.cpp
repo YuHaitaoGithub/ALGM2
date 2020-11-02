@@ -10,39 +10,40 @@ typedef struct TreeNode
 	struct TreeNode *left;
 	struct TreeNode *right;
 }BinNode, *BinTree;
-BinTree binTree;
+BinTree root1;
 
 
-void createBinTree(BinTree &binTree, int* array, int i)
+
+void CreateBinTree2(BinTree &root1, int* array, int i)
 {
 
 	if (array[i] == -11){
 		return;
 	}
-	if (binTree == NULL){
-		binTree = (BinNode *)malloc(sizeof(BinNode));
-		binTree->val = array[i];
-		binTree->left = NULL;
-		binTree->right = NULL;
+	if (root1 == NULL){
+		root1 = (BinNode *)malloc(sizeof(BinNode));
+		root1->val = array[i];
+		root1->left = NULL;
+		root1->right = NULL;
 	}
-	createBinTree(binTree->left, array, 2 * i);
-	createBinTree(binTree->right, array, 2 * i + 1);
+	CreateBinTree2(root1->left, array, 2 * i);
+	CreateBinTree2(root1->right, array, 2 * i + 1);
 }
 
-void Freetree(BinTree &binTree)
+void Freetree2(BinTree &root1)
 {
-	if (binTree != NULL)
+	if (root1 != NULL)
 	{
-		Freetree(binTree->left);
-		Freetree(binTree->right);
-		binTree = NULL;
-		free(binTree);	//当左右子结点都为空时，调用free,释放空间
+		Freetree2(root1->left);
+		Freetree2(root1->right);
+		root1 = NULL;
+		free(root1);	//当左右子结点都为空时，调用free,释放空间
 	}
 }
 
-void Algm5_Test()
+void Algm10_Test()
 {
-	char *filename = "..\\Algorithm\\Config\\05_MinDepth.ini";
+	char *filename = "..\\Algorithm\\Config\\10_BinaryTreePaths.ini";
 	char *input = "Input";
 	char *output = "Output";
 
@@ -89,19 +90,35 @@ void Algm5_Test()
 
 		/*创建二叉树*/
 		int i = 1;
-		createBinTree(binTree, array_a, i);
+		CreateBinTree2(root1,array_a, i);
 
 		/*传入要测的函数*/
-		int rt1 = MinDepth(binTree);
+		int h = 0;
+		int *returnSize = &h;
+		*returnSize = 0;
+		char **rt = BinaryTreePaths(root1, returnSize);
 
 		/*读取输出*/
-		int rt2 = GetPrivateProfileIntA(section, output, -1, filename);
-
-		Assert::AreEqual(rt1, rt2);
+		char rt2[200] = {};
+		char rt3[200] = {};
+		int retur = 0;
+		GetPrivateProfileStringA(section, output,NULL,rt2,200, filename);
+		for (int v = 0; rt2[v] != '\0'; v++)
+			if ((rt2[v] != ',') && (rt2[v] != '"'))rt3[v] = rt2[v];
+		int m = 0;
+		for (int v = 0; v < *returnSize; v++)
+		{
+			for (int c = 0; rt[v][c] != '\0'; c++)
+			{
+				Assert::AreEqual(rt[v][c], rt3[m++]);
+			}
+			m++;
+		}
 		a = a + time + 1;
 		time = 0;
 		memset(section, 0, sizeof(section));
 
-		Freetree(binTree);//释放第一个测试树的内存
+		free(rt);
+		Freetree2(root1);//释放第一个测试树的内存
 	}
 }

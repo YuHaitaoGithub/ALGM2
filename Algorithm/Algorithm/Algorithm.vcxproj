@@ -87,6 +87,7 @@
     <ClInclude Include="Include\07_MaxDepth.h" />
     <ClInclude Include="Include\08_HammingWeight.h" />
     <ClInclude Include="Include\09_AddBinary.h" />
+    <ClInclude Include="Include\10_BinaryTreePaths.h" />
     <ClInclude Include="Include\11_CanWinNim.h" />
     <ClInclude Include="Include\12_IsValid.h" />
     <ClInclude Include="Include\13_MyAtoi.h" />
@@ -101,6 +102,7 @@
     <ClCompile Include="Str\07_MaxDepth.cpp" />
     <ClCompile Include="Str\08_HammingWeight.cpp" />
     <ClCompile Include="Str\09_AddBinary.cpp" />
+    <ClCompile Include="Str\10_BinaryTreePaths.cpp" />
     <ClCompile Include="Str\11_CanWinNim.cpp" />
     <ClCompile Include="Str\12_IsValid.cpp" />
     <ClCompile Include="Str\13_MyAtoi.cpp" />
