@@ -54,6 +54,9 @@
     <ClInclude Include="Include\10_BinaryTreePaths.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Include\14_SingleNumber.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp">
@@ -96,6 +99,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Str\10_BinaryTreePaths.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Str\14_SingleNumber.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
