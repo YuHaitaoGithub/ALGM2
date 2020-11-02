@@ -10,7 +10,7 @@ typedef struct TreeNode{
 	struct TreeNode *right;
 };
 
-void dfs(struct TreeNode* root, int* returnSize, char* temp, int index, char** res){
+void Dfs(struct TreeNode* root, int* returnSize, char* temp, int index, char** res){
 	index += sprintf(temp + index, "%d->", root->val);      //将结点值与箭头存入字符数组，并移动下标
 	//判断叶子节点，并赋值给结果数组
 	if (!root->left && !root->right){
@@ -22,20 +22,20 @@ void dfs(struct TreeNode* root, int* returnSize, char* temp, int index, char** r
 	}
 
 	if (root->left){                 //递归遍历左子树
-		dfs(root->left, returnSize, temp, index, res);
+		Dfs(root->left, returnSize, temp, index, res);
 	}
 	if (root->right){                //递归遍历右子树
-		dfs(root->right, returnSize, temp, index, res);
+		Dfs(root->right, returnSize, temp, index, res);
 	}
 }
 
-char **binaryTreePaths(struct TreeNode *root, int* returnSize){
+char **BinaryTreePaths(struct TreeNode *root, int* returnSize){
 	*returnSize = 0;
 	if (!root)return NULL;
 
 	char** res = (char**)malloc(sizeof(char*)*100);  //这个长度还挣扎了一下
 	char* temp = (char*)malloc(sizeof(char) * 1024);      
-	dfs(root, returnSize, temp, 0, res);
+	Dfs(root, returnSize, temp, 0, res);
 	return res;
 }
 

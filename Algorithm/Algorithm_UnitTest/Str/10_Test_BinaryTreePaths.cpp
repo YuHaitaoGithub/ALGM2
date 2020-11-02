@@ -94,23 +94,25 @@ void Algm10_Test()
 
 		/*传入要测的函数*/
 		int h = 0;
-		int *returnSize1 = &h;
-		*returnSize1 = 0;
-		char **rt = BinaryTreePaths(root1, returnSize1);
+		int *returnSize = &h;
+		*returnSize = 0;
+		char **rt = BinaryTreePaths(root1, returnSize);
 
 		/*读取输出*/
 		char rt2[200] = {};
 		char rt3[200] = {};
+		int retur = 0;
 		GetPrivateProfileStringA(section, output,NULL,rt2,200, filename);
 		for (int v = 0; rt2[v] != '\0'; v++)
-			if ((rt2[v] != ',') && (rt2[v] != '\"'))rt3[v] = rt2[v];
-
-		for (int v = 0; v < *returnSize1; v++)
+			if ((rt2[v] != ',') && (rt2[v] != '"'))rt3[v] = rt2[v];
+		int m = 0;
+		for (int v = 0; v < *returnSize; v++)
 		{
 			for (int c = 0; rt[v][c] != '\0'; c++)
 			{
-				Assert::AreEqual(rt[v][c], rt2[v]);
+				Assert::AreEqual(rt[v][c], rt3[m++]);
 			}
+			m++;
 		}
 		a = a + time + 1;
 		time = 0;
