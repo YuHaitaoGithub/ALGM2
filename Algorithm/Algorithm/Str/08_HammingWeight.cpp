@@ -6,19 +6,17 @@ int HammingWeight(uint32_t n)
 	if (n == 0)return 0;
 	int i = 0;
 	int times = 0;
-	char num[100] = {};
 	while (n)
 	{
-		num[i] = (char)('0' + (n % 2));
-		if (num[i] == '1')times++;
+		if (n % 2 == 1)
+			times++;
 		n = n / 2;
-		i++;
 	}
 	return times;
 
 }
 
-/*方法二分段加和,效率高*/
+/*方法二分段加和*/
 /*
 n = (n & 0x55555555) + ((n >> 1) & 0x55555555);
 n = (n & 0x33333333) + ((n >> 2) & 0x33333333);

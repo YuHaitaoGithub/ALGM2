@@ -19,10 +19,9 @@ void main()
 	{
 		char s[100] = {};
 		gets(s);
-		char *s2[] = {"cpp","add"};
-	
+		char *s2[] = {"b"};
 	//	gets(s2);
-		printf("%d\n", WordBreak(s, s2, 2));
+		printf("%d\n", WordBreak(s, s2, 1));
 	}
 	/*int nums[10] = {5,6,6,5,4,4,2,3,3};
 	int numsize = 9;
