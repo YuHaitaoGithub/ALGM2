@@ -21,7 +21,8 @@ void createBinTree(BinTree &binTree, int* array, int i)
 	}
 	if (binTree == NULL){
 		binTree = (BinNode *)malloc(sizeof(BinNode));
-		if (binTree == NULL)return;
+		if (binTree == NULL)
+			return;
 		binTree->val = array[i];
 		binTree->left = NULL;
 		binTree->right = NULL;

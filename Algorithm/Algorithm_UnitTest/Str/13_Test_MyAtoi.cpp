@@ -22,7 +22,6 @@ void Algm13_Test()
 			section[time++] = section1[k];
 
 		char buff[200] = {};
-		int j = 0;
 		GetPrivateProfileStringA(section, keyname, NULL, buff, 200, filename);
 
 		int f_ret = MyAtoi(buff);

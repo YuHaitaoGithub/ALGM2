@@ -34,7 +34,6 @@ void Dfs(struct TreeNode* root, int* returnSize, char* temp, int index, char** r
 }
 
 char **BinaryTreePaths(struct TreeNode *root, int* returnSize){
-	*returnSize = 0;
 	if (!root)
 		return NULL;
 

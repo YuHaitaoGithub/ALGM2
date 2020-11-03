@@ -9,7 +9,7 @@ struct TreeNode
 };
 
 
-int MaxDepth(struct TreeNode* root)
+int MaxDepth(struct TreeNode *root)
 {
 	if (root == NULL){
 		return 0;

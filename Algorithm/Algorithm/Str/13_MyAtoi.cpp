@@ -28,6 +28,8 @@ int MyAtoi(char * s)
 			t = 0;
 			a[j++] = s[i] - '0';
 		}
+		else
+			break;
 		if (j >= 12)
 			break;
 	}
