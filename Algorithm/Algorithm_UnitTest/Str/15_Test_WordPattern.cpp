@@ -1,15 +1,16 @@
 #include "..\Statement.h"
 #include "..\stdafx.h"
 
-#define MAX_LINE 1024
+#define MAX_LINE 500
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-void Algm12_Test()
-{
 
-	char *filename = "..\\Algorithm\\Config\\12_IsValid.ini";
-	char *keyname = "Input";
-	char *key2 = "Output";
+void Algm15_Test()
+{
+	char *filename = "..\\Algorithm\\Config\\15_WordPattern.ini";
+	char *pattern = "Pattern";
+	char *str = "Str";
+	char *output = "Output";
 
 	char section1[MAX_LINE] = { '\0' };//section1--该文件下所有节名保存数组
 	int a = 0;
@@ -21,21 +22,23 @@ void Algm12_Test()
 		for (int k = a; section1[k] != '\0'; k++)
 			section[time++] = section1[k];
 
-		char buff[200] = {};
-		GetPrivateProfileStringA(section, keyname,NULL,buff,200,filename);
-		
-		int f_ret = IsValid(buff);
+		char buf[200] = {};
+		char buffer[MAX_LINE] = {};
+		GetPrivateProfileStringA(section, pattern, NULL, buf, 200, filename);
+		GetPrivateProfileStringA(section,str, NULL, buffer, MAX_LINE, filename);
 
-		char buffer[100] = { '\0' };
-		GetPrivateProfileStringA(section, key2, NULL, buffer, sizeof(buffer), filename);
+		int f_ret = WordPattern(buf, buffer);
+
+		char out[10] = {};
+		GetPrivateProfileStringA(section, output, NULL, out, 10, filename);
 		int tag = 0;
-		if (buffer[0] == 't')tag = 1;
-
+		if (out[0] == 't')tag = 1;
+		
 		Assert::AreEqual(f_ret, tag);
-
 		a = a + time + 1;
 		time = 0;
 		memset(section, 0, sizeof(section));
 	}
+
 
 }

@@ -77,5 +77,8 @@
     <ClCompile Include="Str\16_Test_ReverseBits.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Str\15_Test_WordPattern.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
