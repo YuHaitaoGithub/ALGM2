@@ -61,7 +61,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>..\Algorithm\Debug\01_ContainsNearbyDuplicate.obj;..\Algorithm\Debug\02_ExcelSheetColumnTitle.obj;..\Algorithm\Debug\03_IsUgly.obj;..\Algorithm\Debug\04_IsPalindrome.obj;..\Algorithm\Debug\06_ContainsDuplicate.obj;..\Algorithm\Debug\08_HammingWeight.obj;..\Algorithm\Debug\05_MinDepth.obj;..\Algorithm\Debug\07_MaxDepth.obj;..\Algorithm\Debug\09_AddBinary.obj;..\\Algorithm\\Debug\\10_BinaryTreePaths.obj;..\Algorithm\Debug\11_CanWinNim.obj;..\Algorithm\Debug\12_IsValid.obj;..\Algorithm\Debug\13_MyAtoi.obj;..\Algorithm\Debug\\14_SingleNumber.obj;..\Algorithm\Debug\16_ReverseBits.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\Algorithm\Debug\01_ContainsNearbyDuplicate.obj;..\Algorithm\Debug\02_ExcelSheetColumnTitle.obj;..\Algorithm\Debug\03_IsUgly.obj;..\Algorithm\Debug\04_IsPalindrome.obj;..\Algorithm\Debug\06_ContainsDuplicate.obj;..\Algorithm\Debug\08_HammingWeight.obj;..\Algorithm\Debug\05_MinDepth.obj;..\Algorithm\Debug\07_MaxDepth.obj;..\Algorithm\Debug\09_AddBinary.obj;..\\Algorithm\\Debug\\10_BinaryTreePaths.obj;..\Algorithm\Debug\11_CanWinNim.obj;..\Algorithm\Debug\12_IsValid.obj;..\Algorithm\Debug\13_MyAtoi.obj;..\Algorithm\Debug\\14_SingleNumber.obj;..\Algorithm\Debug\16_ReverseBits.obj;..\Algorithm\Debug\15_WordPattern.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -107,6 +107,7 @@
     <ClCompile Include="Str\12_Test_IsValid.cpp" />
     <ClCompile Include="Str\13_Test_MyAtoi.cpp" />
     <ClCompile Include="Str\14_Test_SingleNumber.cpp" />
+    <ClCompile Include="Str\15_Test_WordPattern.cpp" />
     <ClCompile Include="Str\16_Test_ReverseBits.cpp" />
     <ClCompile Include="unittest1.cpp" />
   </ItemGroup>

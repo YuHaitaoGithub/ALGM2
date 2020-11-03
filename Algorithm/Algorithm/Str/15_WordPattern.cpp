@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "..\Include\15_WordPattern.h"
 #include "string.h"
-#define MAXSIZE 1000
+#define MAXSIZE 500
 
 
 bool WordPattern(char * pattern, char * s)
@@ -13,7 +13,7 @@ bool WordPattern(char * pattern, char * s)
 	while (sub[rear] != NULL)
 	{
 		rear++;
-		sub[rear] = strtok(NULL, " ");
+		sub[rear] = strtok(NULL, " ");//·Ö¶Î×Ö·û´®
 	}
 	if (plen != rear)
 	{
@@ -21,9 +21,10 @@ bool WordPattern(char * pattern, char * s)
 	}
 	for (int i = 0; i < rear; i++)
 	{
-		for (int j = i + 1; j < rear; j++)
+		for (int j = i + 1; j < rear; j++)//±È½Ï×Ö·û´®
 		{
-			if ((strcmp(sub[i], sub[j]) == 0 && pattern[i] != pattern[j]) || (strcmp(sub[i], sub[j]) != 0 && pattern[i] == pattern[j]))
+			if ((strcmp(sub[i], sub[j]) == 0 && pattern[i] != pattern[j]) ||
+				(strcmp(sub[i], sub[j]) != 0 && pattern[i] == pattern[j]))
 			{
 				return false;
 			}

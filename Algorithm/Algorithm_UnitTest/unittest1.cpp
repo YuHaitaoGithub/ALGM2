@@ -125,9 +125,14 @@ namespace Algorithm_UnitTest
 		{
 			Algm13_Test();
 		}
+		
 		TEST_METHOD(TestMethod14)
 		{
 			Algm14_Test();
+		}
+		TEST_METHOD(TestMethod15)
+		{
+			Algm15_Test();
 		}
 		TEST_METHOD(TestMethod16)
 		{
