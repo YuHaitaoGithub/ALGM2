@@ -22,6 +22,7 @@ void CreateBinTree2(BinTree &root1, int* array, int i)
 	}
 	if (root1 == NULL){
 		root1 = (BinNode *)malloc(sizeof(BinNode));
+		if (root1 == NULL)return;
 		root1->val = array[i];
 		root1->left = NULL;
 		root1->right = NULL;

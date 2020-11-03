@@ -15,6 +15,7 @@ void Dfs(struct TreeNode* root, int* returnSize, char* temp, int index, char** r
 	//判断叶子节点，并赋值给结果数组
 	if (!root->left && !root->right){
 		res[*returnSize] = (char*)calloc(index - 1, sizeof(char));  //因最后一个箭头不需要，所以index-1空间就够了
+		if (res[*returnSize] == NULL)return;
 		temp[index - 2] = '\0';       //最后一位退两格，去掉箭头
 		strcpy(res[*returnSize], temp);
 		(*returnSize)++;
@@ -32,8 +33,10 @@ char **BinaryTreePaths(struct TreeNode *root, int* returnSize){
 	*returnSize = 0;
 	if (!root)return NULL;
 
-	char** res = (char**)malloc(sizeof(char*)*100);  //这个长度还挣扎了一下
-	char* temp = (char*)malloc(sizeof(char) * 1024);      
+	char** res = (char**)malloc(sizeof(char*)*100);  
+	if (res == NULL)return false;
+	char* temp = (char*)malloc(sizeof(char) * 1024);  
+	if (temp == NULL)return false;
 	Dfs(root, returnSize, temp, 0, res);
 	return res;
 }
