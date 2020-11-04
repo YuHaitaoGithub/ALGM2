@@ -30,3 +30,4 @@
 #include "..\Algorithm\Include\15_WordPattern.h"
 #include "..\Algorithm\Include\17_WordBreak.h"
 #include "..\Algorithm\Include\18_PlusOne.h"
+#include "..\Algorithm\Include\19_MySqrt.h"
