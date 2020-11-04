@@ -95,6 +95,7 @@
     <ClInclude Include="Include\15_WordPattern.h" />
     <ClInclude Include="Include\16_ReverseBits.h" />
     <ClInclude Include="Include\17_WordBreak.h" />
+    <ClInclude Include="Include\18_PlusOne.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp" />
@@ -114,6 +115,7 @@
     <ClCompile Include="Str\15_WordPattern.cpp" />
     <ClCompile Include="Str\16_ReverseBits.cpp" />
     <ClCompile Include="Str\17_WordBreak.cpp" />
+    <ClCompile Include="Str\18_PlusOne.cpp" />
     <ClCompile Include="Str\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

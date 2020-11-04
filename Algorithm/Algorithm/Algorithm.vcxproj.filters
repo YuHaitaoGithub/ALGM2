@@ -66,6 +66,9 @@
     <ClInclude Include="Include\17_WordBreak.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Include\18_PlusOne.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp">
@@ -120,6 +123,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Str\17_WordBreak.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Str\18_PlusOne.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
