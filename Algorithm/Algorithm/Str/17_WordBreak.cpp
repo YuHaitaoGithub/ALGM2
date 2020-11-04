@@ -1,40 +1,39 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "..\Include\17_WordBreak.h"
 #include "String.h"
+#include "malloc.h"
+
+//"leetcode"能否break，可以拆分为："l"是否是单词表的单词、剩余子串能否break，
+//"le"是否是单词表的单词、剩余子串能否break……以此类推。
+
+
 bool WordBreak(char * s, char ** wordDict, int wordDictSize)
 {
-	if ((NULL == s) && (NULL == wordDict))return true;
-	if (NULL == s)return false;
-	if (NULL == wordDict)return false;
-	if (wordDictSize == 0)return false;
-	char p1[100] = {};
-	int tag = 0;
-	int len = 0;
-	for (int j = 0; j < wordDictSize; j++)
-	{
-		char *p = NULL;
-		/*if (wordDict[j] == '\0')return false;*/
-		p = strstr(s, wordDict[j]);
-		if (NULL == p)
-			tag++;
-		else strcpy(p1 + len, wordDict[j]);
-		len = strlen(p1);
-	}
-	if (tag == wordDictSize)return false;
-	int len1 = strlen(s);
-	int len2 = strlen(p1);
-	if (len1 < len2)return false;
-	int ret1 = 0;
-	int ret2 = 0;
-	for (int i = 0; i < len1; i++)
-	{ 
-		if (i < len2)
+	if (('\0' == s[0]) && (NULL == wordDict))
+		return true;
+	if ('\0' == s[0])
+		return false;
+	if (NULL == wordDict)
+		return false;
+	if (wordDictSize == 0)
+		return false;
+	int slen = strlen(s);
+	bool *dp = (bool*)calloc(slen+1, 1);
+	dp[0] = true;
+	int k = 0;
+	for (int i = 1; i <= slen; i++)
+		for (int j = 0; j < wordDictSize; j++)
 		{
-			ret2 = p1[i] + ret2;
+			int wlen = strlen(wordDict[j]);
+			k = i - wlen;
+			if (k < 0)
+				continue;
+			dp[i] = (dp[k] && !strncmp(s + k, wordDict[j], wlen)) || dp[i];
 		}
-		ret1 = s[i] + ret1;
-	}
-	return len1 > len2 ? ret1 > ret2:ret1 == ret2;
+	bool ret_dp = dp[slen];
+	dp = NULL;
+	free(dp);
+	return ret_dp;
 
 }
 
