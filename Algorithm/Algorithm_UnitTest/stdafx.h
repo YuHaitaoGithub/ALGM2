@@ -29,3 +29,4 @@
 #include "..\Algorithm\Include\16_ReverseBits.h"
 #include "..\Algorithm\Include\15_WordPattern.h"
 #include "..\Algorithm\Include\17_WordBreak.h"
+#include "..\Algorithm\Include\18_PlusOne.h"

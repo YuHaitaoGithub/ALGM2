@@ -5,8 +5,6 @@
 
 int* PlusOne(int* digits, int digitsSize, int * returnSize)
 {
-	if (digits == NULL)return 0;
-	if (returnSize == NULL)return 0;
 	if (digitsSize == 0)return 0;
 	for (int j = 0; j < digitsSize; j++)
 		if (digits[j] >= 10 || digits[j] < 0)

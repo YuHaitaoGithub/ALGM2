@@ -142,5 +142,9 @@ namespace Algorithm_UnitTest
 		{
 			Algm17_Test();
 		}
+		TEST_METHOD(TestMethod18)
+		{
+			Algm18_Test();
+		}
 	};
 }
