@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include "..\Include\18_PlusOne.h"
+#include "..\Include\19_MySqrt.h"
 #include "Windows.h"
 #include "stdio.h"
 #include "malloc.h"
@@ -9,6 +9,13 @@
 
 void main()
 {
+	int t = 0;
+	while(scanf("%d", &t))
+	printf("%d\n", MySqrt(t));
+
+
+
+
 	/*while (1)
 	{
 		char s[100] = {};
@@ -27,20 +34,22 @@ void main()
 	int numsize = 9;
 	printf("%d\n", SingleNumber(nums, numsize));*/
 
-	int n[10] = {};
-	int p = 0;
-	//int *pp = &p;
-	int d = 4;
-	while (1)
-	{ 
-		for (int i = 0; i < d; i++)
-		{
-			scanf_s("%d", &n[i]);
-		}
-		int *pp = PlusOne(n, d, &p);
-		for (int j = 0; j < p; j++)
-		{
-			printf("%d", pp[j]);
-		}
-	}
+	//int n[10] = {};
+	//int p = 0;
+	////int *pp = &p;
+	//int d = 4;
+	//while (1)
+	//{ 
+	//	for (int i = 0; i < d; i++)
+	//	{
+	//		scanf_s("%d", &n[i]);
+	//	}
+	//	int *pp = PlusOne(n, d, &p);
+	//	for (int j = 0; j < p; j++)
+	//	{
+	//		printf("%d", pp[j]);
+	//	}
+	//}
+
+
 }
