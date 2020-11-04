@@ -50,3 +50,6 @@ void Algm15_Test();
 /*第十六题*/
 void Algm16_Test();
 
+/*第十七题*/
+void Algm17_Test();
+

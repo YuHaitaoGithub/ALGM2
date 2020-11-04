@@ -6,7 +6,8 @@
 
 int MyAtoi(char * s)
 {
-	if (s[0] == '\0')return 0;
+	if (s[0] == '\0')
+		return 0;
 	int a[12] = {};
 	char *p1 = "2147483648";
 	char *p2 = "2147483647";
@@ -16,8 +17,10 @@ int MyAtoi(char * s)
 	i = j = 0;
 	for (int i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] == ' ')continue;
-		if ((s[i] == '-') && t){
+		if (s[i] == ' '||s[i] == '+')
+			continue;
+		if ((s[i] == '-') && t)
+		{
 			f = -1; i++;
 		}
 		if ((s[i] - '0' <= 9) && (s[i] - '0' >= 0))
@@ -25,18 +28,23 @@ int MyAtoi(char * s)
 			t = 0;
 			a[j++] = s[i] - '0';
 		}
-		else if(s[i] != '"')break;
-		if (j >= 12)break;
+		else
+			break;
+		if (j >= 12)
+			break;
 	}
 	j--;
-	if (j >= 10)return f == 1 ? INT_MAX : INT_MIN;
+	if (j >= 10)
+		return f == 1 ? INT_MAX : INT_MIN;
 	else if (j == 9)
 	{
 		p = (f == 1 ? p2 : p1);
 		for (int x = 0; x <= j; x++)
 		{	
-			if (a[x] > p[x] - '0')return f == 1 ? INT_MAX : INT_MIN;
-			if (a[x] < p[x] - '0')break;
+			if (a[x] > p[x] - '0')
+				return f == 1 ? INT_MAX : INT_MIN;
+			if (a[x] < p[x] - '0')
+				break;
 		}
 	}
 	int ret = 0;
