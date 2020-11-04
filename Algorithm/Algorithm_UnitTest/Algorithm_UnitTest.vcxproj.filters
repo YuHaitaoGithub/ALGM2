@@ -83,5 +83,8 @@
     <ClCompile Include="Str\17_Test_WordBreak.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Str\18_Test_PlusOne.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
