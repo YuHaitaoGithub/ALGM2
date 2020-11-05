@@ -31,3 +31,4 @@
 #include "..\Algorithm\Include\17_WordBreak.h"
 #include "..\Algorithm\Include\18_PlusOne.h"
 #include "..\Algorithm\Include\19_MySqrt.h"
+#include "..\Algorithm\Include\20_MoveZeroes.h"

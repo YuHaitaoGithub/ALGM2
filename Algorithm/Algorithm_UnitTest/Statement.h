@@ -59,3 +59,6 @@ void Algm18_Test();
 /*第十八题*/
 void Algm19_Test();
 
+/*第二十题*/
+void Algm20_Test();
+
