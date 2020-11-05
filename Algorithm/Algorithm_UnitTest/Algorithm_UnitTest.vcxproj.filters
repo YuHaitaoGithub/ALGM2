@@ -89,5 +89,8 @@
     <ClCompile Include="Str\19_Test_MySqrt.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Str\20_Test_MoveZeroes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
