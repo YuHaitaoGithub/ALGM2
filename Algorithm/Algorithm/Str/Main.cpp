@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include "..\Include\20_MoveZeroes.h"
+#include "..\Include\21_Reverse.h"
 #include "Windows.h"
 #include "stdio.h"
 #include "malloc.h"
@@ -11,21 +11,21 @@ using namespace std;
 
 void main()
 {
-	//int nums[] = { 0, 1, 0, 3, 12 };
-	vector<int> nums{ 0, 0,1 };
-	MoveZeroes(nums);
-	for (int i = 0; i < nums.size();i++)
-	printf("%d\n", nums[i]);
+	////int nums[] = { 0, 1, 0, 3, 12 };
+	//vector<int> nums{ 0, 0,1 };
+	//MoveZeroes(nums);
+	//for (int i = 0; i < nums.size();i++)
+	//printf("%d\n", nums[i]);
 
 
 
 
-	/*while (1)
+	while (1)
 	{
-		char s[100] = {};
-		gets(s);
-		printf("%d\n", IsValid(s));
-	}*/
+		int k = 0;
+		scanf_s("%d", &k);
+		printf("%d\n", Reverse(k));
+	}
 	//while (1)
 	//{
 	//	char s[100] = {};

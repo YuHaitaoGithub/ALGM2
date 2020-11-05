@@ -62,3 +62,5 @@ void Algm19_Test();
 /*第二十题*/
 void Algm20_Test();
 
+/*第二十一题*/
+void Algm21_Test();
