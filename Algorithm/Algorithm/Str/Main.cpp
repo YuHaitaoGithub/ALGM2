@@ -1,17 +1,21 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include "..\Include\19_MySqrt.h"
+#include "..\Include\20_MoveZeroes.h"
 #include "Windows.h"
 #include "stdio.h"
 #include "malloc.h"
+#include <vector>
+using namespace std;
 
 
 
 
 void main()
 {
-	int t = 0;
-	while(scanf("%d", &t))
-	printf("%d\n", MySqrt(t));
+	//int nums[] = { 0, 1, 0, 3, 12 };
+	vector<int> nums{ 0, 0,1 };
+	MoveZeroes(nums);
+	for (int i = 0; i < nums.size();i++)
+	printf("%d\n", nums[i]);
 
 
 

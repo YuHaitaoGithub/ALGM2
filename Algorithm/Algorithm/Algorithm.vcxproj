@@ -97,6 +97,7 @@
     <ClInclude Include="Include\17_WordBreak.h" />
     <ClInclude Include="Include\18_PlusOne.h" />
     <ClInclude Include="Include\19_MySqrt.h" />
+    <ClInclude Include="Include\20_MoveZeroes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp" />
@@ -118,6 +119,7 @@
     <ClCompile Include="Str\17_WordBreak.cpp" />
     <ClCompile Include="Str\18_PlusOne.cpp" />
     <ClCompile Include="Str\19_MySqrt.cpp" />
+    <ClCompile Include="Str\20_MoveZeroes.cpp" />
     <ClCompile Include="Str\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
