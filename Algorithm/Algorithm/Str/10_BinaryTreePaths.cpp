@@ -44,6 +44,7 @@ char **BinaryTreePaths(struct TreeNode *root, int* returnSize){
 	if (temp == NULL)
 		return false;
 	Dfs(root, returnSize, temp, 0, res);
+	temp = NULL;
 	free(temp);
 	return res;
 }

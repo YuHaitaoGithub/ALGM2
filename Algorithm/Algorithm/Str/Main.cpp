@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include "..\Include\21_Reverse.h"
+#include "..\Include\22_Rotate.h"
 #include "Windows.h"
 #include "stdio.h"
 #include "malloc.h"
@@ -18,14 +18,16 @@ void main()
 	//printf("%d\n", nums[i]);
 
 
-
-
-	while (1)
-	{
-		int k = 0;
-		scanf_s("%d", &k);
-		printf("%d\n", Reverse(k));
-	}
+	int k[3] = { 1, 2, 3 };
+	vector<int>k4{1, 2, 3};
+		int k1 = 3;
+		int k2 = 2;
+		Rotate(k4,k2);
+		for (int i = 0; i < k1; i++)
+		{
+			printf("%d,", k4[i]);
+		}
+	
 	//while (1)
 	//{
 	//	char s[100] = {};
