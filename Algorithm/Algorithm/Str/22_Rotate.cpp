@@ -30,6 +30,7 @@
 //·½°¸Èý
 void Rotate(vector<int>& nums, int k)
 {
+	if (k < -1)return;
 	if (k == 0 || k % nums.size() == 0)
 		return;
 	int k1 = k % nums.size();

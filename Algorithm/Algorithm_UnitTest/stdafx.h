@@ -33,3 +33,4 @@
 #include "..\Algorithm\Include\19_MySqrt.h"
 #include "..\Algorithm\Include\20_MoveZeroes.h"
 #include "..\Algorithm\Include\21_Reverse.h"
+#include "..\Algorithm\Include\22_Rotate.h"
