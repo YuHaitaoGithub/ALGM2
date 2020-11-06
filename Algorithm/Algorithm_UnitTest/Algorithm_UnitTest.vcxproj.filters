@@ -95,5 +95,8 @@
     <ClCompile Include="Str\21_Test_Reverse.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Str\22_Test_Rotate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

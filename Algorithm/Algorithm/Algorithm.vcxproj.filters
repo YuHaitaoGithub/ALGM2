@@ -78,6 +78,9 @@
     <ClInclude Include="Include\21_Reverse.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Include\22_Rotate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp">
@@ -144,6 +147,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Str\21_Reverse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Str\22_Rotate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
