@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include "..\Include\22_Rotate.h"
+#include "..\Include\23_RestoreIpAddresses.h"
 #include "Windows.h"
 #include "stdio.h"
 #include "malloc.h"
@@ -17,17 +17,24 @@ void main()
 	//for (int i = 0; i < nums.size();i++)
 	//printf("%d\n", nums[i]);
 
-
-	int k[3] = { 1, 2, 3 };
-	vector<int>k4{1, 2, 3};
-		int k1 = 3;
-		int k2 = 2;
-		Rotate(k4,k2);
-		for (int i = 0; i < k1; i++)
-		{
-			printf("%d,", k4[i]);
-		}
+	//int k[3] = { 1, 2, 3 };
+	//vector<int>k4{1, 2, 3};
+	//	int k1 = 3;
+	//	int k2 = 2;
+	//	Rotate(k4,k2);
+	//	for (int i = 0; i < k1; i++)
+	//	{
+	//		printf("%d,", k4[i]);
+	//	}
+	char *c = "0025525";
+	int m = 0;
+	char **o = RestoreIpAddresses(c, &m);
 	
+		for (int i = 0; i < m; i++)
+		{	for (int j = 0; o[i][j] != '\0'; j++)
+				printf("%c", o[i][j]); 
+		printf("\n");
+	}
 	//while (1)
 	//{
 	//	char s[100] = {};
