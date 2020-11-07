@@ -34,3 +34,4 @@
 #include "..\Algorithm\Include\20_MoveZeroes.h"
 #include "..\Algorithm\Include\21_Reverse.h"
 #include "..\Algorithm\Include\22_Rotate.h"
+#include "..\Algorithm\Include\23_RestoreIpAddresses.h"

@@ -26,7 +26,7 @@ void main()
 	//	{
 	//		printf("%d,", k4[i]);
 	//	}
-	char *c = "0025525";
+	char *c = "12300054";
 	int m = 0;
 	char **o = RestoreIpAddresses(c, &m);
 	
