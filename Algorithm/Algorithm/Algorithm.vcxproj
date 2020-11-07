@@ -100,6 +100,7 @@
     <ClInclude Include="Include\20_MoveZeroes.h" />
     <ClInclude Include="Include\21_Reverse.h" />
     <ClInclude Include="Include\22_Rotate.h" />
+    <ClInclude Include="Include\23_RestoreIpAddresses.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp" />
@@ -124,6 +125,7 @@
     <ClCompile Include="Str\20_MoveZeroes.cpp" />
     <ClCompile Include="Str\21_Reverse.cpp" />
     <ClCompile Include="Str\22_Rotate.cpp" />
+    <ClCompile Include="Str\23_RestoreIpAddresses.cpp" />
     <ClCompile Include="Str\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

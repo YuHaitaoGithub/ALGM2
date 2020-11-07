@@ -81,6 +81,9 @@
     <ClInclude Include="Include\22_Rotate.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Include\23_RestoreIpAddresses.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp">
@@ -150,6 +153,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Str\22_Rotate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Str\23_RestoreIpAddresses.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
