@@ -116,6 +116,7 @@
     <ClCompile Include="Str\21_Test_Reverse.cpp" />
     <ClCompile Include="Str\22_Test_Rotate.cpp" />
     <ClCompile Include="Str\23_Test_RestoreIpAddresses.cpp" />
+    <ClCompile Include="Str\24_Test_LengthOfLongestSubstring.cpp" />
     <ClCompile Include="unittest1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
