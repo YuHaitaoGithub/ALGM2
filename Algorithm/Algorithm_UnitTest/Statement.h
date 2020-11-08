@@ -70,3 +70,6 @@ void Algm22_Test();
 
 /*第二十三题*/
 void Algm23_Test();
+
+/*第二十四题*/
+void Algm24_Test();

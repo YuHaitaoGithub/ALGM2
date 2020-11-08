@@ -6,7 +6,6 @@
 
 int LengthOfLongestSubstring(char * s)
 {
-	if (s == NULL)return 0;
 	int len = strlen(s);
 	if (!len)return 0;
 	int max_lenth = 1;
