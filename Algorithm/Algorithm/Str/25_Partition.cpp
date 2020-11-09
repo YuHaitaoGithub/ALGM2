@@ -2,6 +2,11 @@
 
 using namespace std;
 
+struct ListNode
+{
+	int val;
+	struct ListNode *next;
+};
 
 struct ListNode* Partition(struct ListNode* head, int x)
 {
@@ -24,10 +29,9 @@ struct ListNode* Partition(struct ListNode* head, int x)
 	while (Juage != NULL)
 	{
 		if (min.begin() + i < min.end() && min.size())
-			Juage->val = *(min.begin() + i);
+			Juage->val = *(min.begin() + i++);
 		else if (max.size())
-			Juage->val = *(max.begin() + j);
-		i++; j++;
+			Juage->val = *(max.begin() + j++);
 		Juage = Juage->next;
 	}
 	return head;
