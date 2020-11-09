@@ -1,5 +1,6 @@
 #include "..\Statement.h"
 #include "..\stdafx.h"
+#include "string.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 #define MAX_LINE 200

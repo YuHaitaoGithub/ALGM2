@@ -43,7 +43,11 @@ void Algm17_Test()
 			}
 			wordSize++; j++;
 		}
-		int ret = WordBreak(In_buf1, wordDict, wordSize);
+		int ret;
+		if (strlen(In_buf2) == 0)
+			 ret = WordBreak(In_buf1, NULL, wordSize);
+		else 
+			 ret = WordBreak(In_buf1, wordDict, wordSize);
 
 		char out[10] = {};
 		int tag = 0;

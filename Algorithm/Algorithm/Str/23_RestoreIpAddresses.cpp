@@ -46,7 +46,7 @@ void dsf(char *s, int *returnSize, int number, char **res, char *temp,int index,
 
 char **RestoreIpAddresses(char * s, int *returnSize)
 {
-	if (s == NULL)
+	if (strlen(s) == 0)
 		return NULL;
 	int len = strlen(s);
 	if (len > 12||len<4)return NULL;
