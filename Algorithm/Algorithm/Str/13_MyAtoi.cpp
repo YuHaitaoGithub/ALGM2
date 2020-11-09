@@ -1,63 +1,44 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "..\Include\13_MyAtoi.h"
 #include "stdio.h"
 #include "stdlib.h"
-#include "math.h"
 #include "string.h"
 
 int MyAtoi(char * s)
 {
-	if (s[0] == '\0')
-		return 0;
-	int a[12] = {};
-	char *p1 = "2147483648";
-	char *p2 = "2147483647";
-	char *p = NULL;
-	int f, t, i, j, t1, t2;
-	f = t = t1 = t2 = 1;
-	i = j = 0;
-	for (int i = 0; s[i] != '\0'; i++)
+	int len = strlen(s);
+	if (len == 0)return 0;
+	int f = 1;
+	while (*s == ' ')
+		s++;
+	switch (*s)
 	{
-		if (s[i] == ' '&&t2)
-			continue;
-		if (s[i] == '+' && t)
-		{
-			f = 1; i++; t = 0;
-		}
-		if ((s[i] == '-') && t)
-		{
-			f = -1; i++; t = 0;
-		}
-		if ((s[i] - '0' <= 9) && (s[i] - '0' >= 0))
-		{
-			t = 0; t2 = 0;
-			if (s[i] == '0'&&t1)continue;
-			else {
-				a[j++] = s[i] - '0'; t1 = 0;
-			}
-		}
+		case '-':{f = -1; s++; break; }
+		case '+':{s++; break; }
+	}
+	if (len > 12)
+	{
+		if (f == 1)
+			return INT_MAX;
 		else
-			break;
-		if (j >= 12)
-			break;
+			return INT_MIN;
 	}
-	j--;
-	if (j >= 10)
-		return f == 1 ? INT_MAX : INT_MIN;
-	else if (j == 9)
+	if ((*s - '0' < 0) || (*s - '0' > 9))
+		return 0;
+	long long ret = 0;
+	while ((*s - '0' >= 0) && (*s - '0' <= 9))
 	{
-		p = (f == 1 ? p2 : p1);
-		for (int x = 0; x <= j; x++)
-		{
-			if (a[x] > p[x] - '0')
-				return f == 1 ? INT_MAX : INT_MIN;
-			if (a[x] < p[x] - '0')
-				break;
-		}
+		ret = ret * 10 + (*s - '0');
+		if (ret != ((int)ret))
+			return f == 1 ? INT_MAX : INT_MIN;
+		s++;
 	}
-	int ret = 0;
-	for (int k = 0; k <= j; k++)
-	{
-		ret = (int)pow(10.0, j - k) * (f * a[k]) + ret;
-	}
-	return ret;
+	ret = ret * f;
+	return (int)ret;
 }
+
+
+
+
+
+
