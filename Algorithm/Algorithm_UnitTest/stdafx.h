@@ -36,3 +36,4 @@
 #include "..\Algorithm\Include\22_Rotate.h"
 #include "..\Algorithm\Include\23_RestoreIpAddresses.h"
 #include "..\Algorithm\Include\24_LengthOfLongestSubstring.h"
+#include "..\Algorithm\Include\25_Partition.h"

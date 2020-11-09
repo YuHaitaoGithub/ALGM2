@@ -102,6 +102,7 @@
     <ClInclude Include="Include\22_Rotate.h" />
     <ClInclude Include="Include\23_RestoreIpAddresses.h" />
     <ClInclude Include="Include\24_LengthOfLongestSubstring.h" />
+    <ClInclude Include="Include\25_Partition.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Str\01_ContainsNearbyDuplicate.cpp" />
@@ -128,6 +129,7 @@
     <ClCompile Include="Str\22_Rotate.cpp" />
     <ClCompile Include="Str\23_RestoreIpAddresses.cpp" />
     <ClCompile Include="Str\24_LengthOfLongestSubstring.cpp" />
+    <ClCompile Include="Str\25_Partition.cpp" />
     <ClCompile Include="Str\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
