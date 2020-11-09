@@ -10,8 +10,6 @@ int* PlusOne(int* digits, int digitsSize, int * returnSize)
 		if (digits[j] >= 10 || digits[j] < 0)
 			return 0;
 	int carry = 1;
-	if (digits[digitsSize - 1] == 9)
-	digits[digitsSize - 1] = digits[digitsSize - 1];
 	for (int i = digitsSize-1; i >= 0; i--){
 		if (digits[i] == 9&&carry){
 			digits[i] = 0; carry = 1;

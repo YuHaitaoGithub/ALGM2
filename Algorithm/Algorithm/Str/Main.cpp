@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include "..\Include\23_RestoreIpAddresses.h"
+#include "..\Include\24_LengthOfLongestSubstring.h"
 #include "Windows.h"
 #include "stdio.h"
 #include "malloc.h"
@@ -26,15 +26,15 @@ void main()
 	//	{
 	//		printf("%d,", k4[i]);
 	//	}
-	char *c = "12300054";
-	int m = 0;
-	char **o = RestoreIpAddresses(c, &m);
+	//char *c = "12300054";
+	//int m = 0;
+	//char **o = RestoreIpAddresses(c, &m);
+	//
+	//	for (int i = 0; i < m; i++)
+	//	{	for (int j = 0; o[i][j] != '\0'; j++)
+	//			printf("%c", o[i][j]); 
+	//	printf("\n");
 	
-		for (int i = 0; i < m; i++)
-		{	for (int j = 0; o[i][j] != '\0'; j++)
-				printf("%c", o[i][j]); 
-		printf("\n");
-	}
 	//while (1)
 	//{
 	//	char s[100] = {};
@@ -63,6 +63,7 @@ void main()
 	//		printf("%d", pp[j]);
 	//	}
 	//}
-
-
+	char *p = "abcabcbb";
+	int ret = LengthOfLongestSubstring(p);
+	printf("%d\n", ret);
 }

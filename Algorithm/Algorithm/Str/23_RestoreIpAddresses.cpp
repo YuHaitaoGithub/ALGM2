@@ -21,7 +21,8 @@ void dsf(char *s, int *returnSize, int number, char **res, char *temp,int index,
 		dsf(s, returnSize, number+1, res, temp, index+1, len);
 	}
 
-	if ((len - index - 2 <= (3 - number) * 3) && (len - index - 2 >= 3 - number) && s[index] != '0')
+	if ((len - index - 2 <= (3 - number) * 3) && (len - index - 2 >= 3 - number) 
+		&& s[index] != '0')
 	{
 		temp[index + number] = s[index];
 		temp[index + number+1] = s[index+1];
