@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include "..\Include\24_LengthOfLongestSubstring.h"
+#include "..\Include\13_MyAtoi.h"
 #include "Windows.h"
 #include "stdio.h"
 #include "malloc.h"
@@ -63,7 +63,10 @@ void main()
 	//		printf("%d", pp[j]);
 	//	}
 	//}
-	char *p = "abcabcbb";
+	/*char *p = "abcabcbb";
 	int ret = LengthOfLongestSubstring(p);
-	printf("%d\n", ret);
+	printf("%d\n", ret);*/
+	char a[100] = {};
+	gets(a);
+	printf("%d\n", MyAtoi(a));
 }
