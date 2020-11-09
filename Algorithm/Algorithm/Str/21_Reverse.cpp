@@ -9,18 +9,19 @@ int Reverse(int x)
 	char *min = "2147483648";
 	int symbol = 1;
 	int len = sprintf(nums, "%d", x);
-	if (len == 0)return 0;
 	int j = 0;
 	if (nums[0] == '-')
 	{
-		if (len == 1)return 0;
-		if (len == 2)return x;
+		
+		if (len == 2)
+			return x;
 		j = len;
 		symbol = -1;
 	}
 	else
 	{
-		if (len == 1)return x;
+		if (len == 1)
+			return x;
 		j = len;
 	}
 	char *p = symbol == 1 ? max : min;

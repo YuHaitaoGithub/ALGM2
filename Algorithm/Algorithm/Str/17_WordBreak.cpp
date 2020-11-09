@@ -9,13 +9,11 @@
 
 bool WordBreak(char * s, char ** wordDict, int wordDictSize)
 {
-	if (('\0' == s[0]) && (NULL == wordDict))
+	if ((0 == strlen(s)) && (NULL == wordDict))
 		return true;
 	if ('\0' == s[0])
 		return false;
 	if (NULL == wordDict)
-		return false;
-	if (wordDictSize == 0)
 		return false;
 	int slen = strlen(s);
 	bool *dp = (bool*)calloc(slen+1, 1);
