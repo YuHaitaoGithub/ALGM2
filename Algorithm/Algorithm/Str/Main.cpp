@@ -11,9 +11,9 @@ using namespace std;
 
 void main()
 {
-	
-	vector<int> nums = { 0, 0,1,1,5 ,2,2};
-	printf("%d", SingleNumber(nums));
+	//
+	//vector<int> nums = { 0, 0,1,1,5 ,2,2};
+	//printf("%d", SingleNumber(nums));
 	//MoveZeroes(nums);
 	//for (int i = 0; i < nums.size();i++)
 	//printf("%d\n", nums[i]);
