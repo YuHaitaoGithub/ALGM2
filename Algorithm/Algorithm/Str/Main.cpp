@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include "..\Include\13_MyAtoi.h"
+#include "..\Include\14_SingleNumber.h"
 #include "Windows.h"
 #include "stdio.h"
 #include "malloc.h"
@@ -11,8 +11,9 @@ using namespace std;
 
 void main()
 {
-	////int nums[] = { 0, 1, 0, 3, 12 };
-	//vector<int> nums{ 0, 0,1 };
+	
+	vector<int> nums = { 0, 0,1,1,5 ,2,2};
+	printf("%d", SingleNumber(nums));
 	//MoveZeroes(nums);
 	//for (int i = 0; i < nums.size();i++)
 	//printf("%d\n", nums[i]);

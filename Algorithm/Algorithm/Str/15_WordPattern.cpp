@@ -32,5 +32,10 @@ bool WordPattern(char * pattern, char * s)
 	}
 	return true;
 
-
 }
+//
+//bool WordPattern(string pattern, string s)
+//{
+//
+//}
+
