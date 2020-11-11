@@ -66,7 +66,8 @@ void main()
 	/*char *p = "abcabcbb";
 	int ret = LengthOfLongestSubstring(p);
 	printf("%d\n", ret);*/
-	char a[100] = {};
+	/*char a[100] = {};
 	gets(a);
-	printf("%d\n", MyAtoi(a));
+	printf("%d\n", MyAtoi(a));*/
+
 }

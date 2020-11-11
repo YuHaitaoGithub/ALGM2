@@ -3,8 +3,6 @@
 #include "String.h"
 #include "malloc.h"
 
-//"leetcode"能否break，可以拆分为："l"是否是单词表的单词、剩余子串能否break，
-//"le"是否是单词表的单词、剩余子串能否break……以此类推。
 
 
 bool WordBreak(char * s, char ** wordDict, int wordDictSize)
@@ -26,7 +24,9 @@ bool WordBreak(char * s, char ** wordDict, int wordDictSize)
 			k = i - wlen;
 			if (k < 0)
 				continue;
-			dp[i] = (dp[k] && !strncmp(s + k, wordDict[j], wlen)) || dp[i];
+			dp[i] = (dp[k] && !strncmp(s + k, wordDict[j], wlen));
+			if (dp[i])
+				break;
 		}
 	bool ret_dp = dp[slen];
 	dp = NULL;
