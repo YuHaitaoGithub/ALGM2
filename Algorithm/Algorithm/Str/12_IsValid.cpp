@@ -22,3 +22,24 @@ bool IsValid(char *s)
 	free(arr);
 	return (point == -1);
 }
+
+//bool IsValid(string s)
+//{
+//	if (s.size() == 0)
+//		return false;
+//	stack<char>my_stack;
+//	for (int i = 0; i < s.size(); i++)
+//	{
+//		if (s[i] == '(')
+//			my_stack.push(')');
+//		else if (s[i] == '{')
+//			my_stack.push('}');
+//		else if (s[i] == '[')
+//			my_stack.push(']');
+//		else if (my_stack.empty() || s[i] != my_stack.top())
+//			return false;
+//		else
+//			my_stack.top();
+//	}
+//	return my_stack.empty();
+//}

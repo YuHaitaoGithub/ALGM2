@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include "..\Include\14_SingleNumber.h"
+#include "..\Include\15_WordPattern.h"
 #include "Windows.h"
 #include "stdio.h"
 #include "malloc.h"
@@ -70,5 +70,10 @@ void main()
 	/*char a[100] = {};
 	gets(a);
 	printf("%d\n", MyAtoi(a));*/
+	/*char a[100];
+	char b[100];
+	gets(a);
+	gets(b);
+	WordPattern(a, b);*/
 
 }

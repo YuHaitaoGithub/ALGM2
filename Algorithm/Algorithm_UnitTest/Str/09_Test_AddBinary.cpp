@@ -43,17 +43,12 @@ void Algm9_Test()
 		
 		memset(buf2, 0, sizeof(buf2));
 		GetPrivateProfileStringA(section, output, NULL, buf2, MAX_LINE, filename);
-	//	if (ret == NULL)Assert::AreEqual(buf2[0],'\0');
-	//	else
-	//	{
-			int lenth = strlen(ret) < strlen(buf2) ? strlen(ret) : strlen(buf2);
-			j = 0;
-			for (int x = 0; x < lenth; x++)
-			{
-				if (buf2[x] != '"')Assert::AreEqual(ret[j++], buf2[x]);
-			}
-	//	}
-
+		int lenth = strlen(ret) < strlen(buf2) ? strlen(ret) : strlen(buf2);
+		j = 0;
+		for (int x = 0; x < lenth; x++)
+		{
+			if (buf2[x] != '"')Assert::AreEqual(ret[j++], buf2[x]);
+		}
 		a = a + time + 1;
 		time = 0;
 		memset(section, 0, sizeof(section));
