@@ -2,7 +2,7 @@
 #include "..\Include\17_WordBreak.h"
 #include "String.h"
 #include "malloc.h"
-
+#include<String>
 
 
 bool WordBreak(char * s, char ** wordDict, int wordDictSize)
@@ -35,3 +35,28 @@ bool WordBreak(char * s, char ** wordDict, int wordDictSize)
 
 }
 
+//bool WordBreak(char * s, char ** wordDict, int wordDictSize)
+//{
+//	if ((0 == strlen(s)) && (NULL == wordDict))
+//		return true;
+//	if ('\0' == s[0])
+//		return false;
+//	if (NULL == wordDict)
+//		return false;
+//	int slen = strlen(s);
+//	string ss = s;
+//	set<string>se(wordDict, wordDict + wordDictSize);
+//	bool *dp = (bool*)calloc(slen + 1, 1);
+//	dp[0] = true;
+//	int k = 0;
+//	for (int i = 1; i <= slen; i++)
+//	{
+//		for (int j = i-1; j >= 0; j--)
+//		{
+//			dp[i] = dp[j] && se.count(ss.substr(j, i-j));
+//			if (dp[i])
+//				break;
+//		}
+//	}
+//	return dp[slen];
+//}

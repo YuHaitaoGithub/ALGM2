@@ -57,4 +57,5 @@ int MinDepth(struct TreeNode* root)
 		if (p->right != NULL)
 			my_queue.push({ p->right, min + 1 });
 	}
+	return min;
 }
