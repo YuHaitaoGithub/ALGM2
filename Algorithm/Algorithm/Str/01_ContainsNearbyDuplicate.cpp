@@ -21,19 +21,3 @@ bool ContainsNearbyDuplicate(int* nums, int numsSize, int k)
 	return false;
 }
 
-//以前版本
-//map<int, int>m;
-//	map<int, int>::iterator iter;//定义个迭代器
-//	pair<map<int, int>::iterator, bool> Insert_Pair;
-//int tag = 0;
-//for(int i = 0;i<numsSize;i++)
-//{
-	//if (m.insert(pair<int, int>(nums[i], i)));//判断是否为空
-	//if (!Insert_Pair.second)
-	//{
-	//	iter = m.find(nums[i]);
-	//	tag = (iter->second) >= i ? (iter->second) - i : i - (iter->second);
-	//	return k >= tag ? true : false;
-	//}
-//return flase;
-//}
