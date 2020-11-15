@@ -22,7 +22,7 @@ bool IsValid(char *s)
 	free(arr);
 	return (point == -1);
 }
-
+//
 //bool IsValid(string s)
 //{
 //	if (s.size() == 0)
@@ -39,7 +39,7 @@ bool IsValid(char *s)
 //		else if (my_stack.empty() || s[i] != my_stack.top())
 //			return false;
 //		else
-//			my_stack.top();
+//			my_stack.pop();
 //	}
-//	return my_stack.empty();
+//	return !my_stack.empty();
 //}

@@ -9,17 +9,9 @@ char * ExcelSheetColumnTitle(int n)
 	int tag = 0;
 	while (n)
 	{
-		tag = n % 26;
-		if (tag)
-		{
-			vaule[i] = (char)('A' + (tag - 1));
-			n = n / 26;
-		}
-		else
-		{
-			vaule[i] = (char)('A' + 25);
-			n = (n - 1) / 26;
-		}
+		--n;
+		vaule[i] = (char)('A' + n % 26);
+		n /= 26;
 		i++;
 	}
 	i--;
@@ -32,3 +24,17 @@ char * ExcelSheetColumnTitle(int n)
 	vaules[strlen(vaules)] = '"';
 	return vaules;
 }
+
+/*string ExcelSheetColumnTitle(int n)
+{
+	string ret = "";
+	if (n <= 0)
+		return ret;
+	while (n)
+	{
+		--n;
+		ret.insert(ret.begin(), 'A' + n % 26);
+		n /= 26;
+	}
+	return ret;
+}*/

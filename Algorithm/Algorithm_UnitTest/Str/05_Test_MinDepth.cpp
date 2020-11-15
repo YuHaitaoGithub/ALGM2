@@ -37,8 +37,8 @@ void Freetree(BinTree &binTree)
 	{
 		Freetree(binTree->left);
 		Freetree(binTree->right);
-		binTree = NULL;
 		free(binTree);	//当左右子结点都为空时，调用free,释放空间
+		binTree = NULL;
 	}
 }
 
@@ -84,7 +84,7 @@ void Algm5_Test()
 				else array_a[k++] = atoi(&array_b[++j]);
 			}
 		}
-		for (int z = k; z <= (2 * k - 1); z++)//用-1代表空
+		for (int z = k; z <= (2 * k - 1); z++)//用-11代表空
 		{
 			array_a[z] = -11;
 		}

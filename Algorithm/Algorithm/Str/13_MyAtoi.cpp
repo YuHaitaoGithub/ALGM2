@@ -16,25 +16,19 @@ int MyAtoi(char * s)
 		case '-':{f = -1; s++; break; }
 		case '+':{s++; break; }
 	}
-	if (len > 12)
-	{
-		if (f == 1)
-			return INT_MAX;
-		else
-			return INT_MIN;
-	}
 	if ((*s - '0' < 0) || (*s - '0' > 9))
 		return 0;
-	long long ret = 0;
+	int ret = 0;
 	while ((*s - '0' >= 0) && (*s - '0' <= 9))
 	{
-		ret = ret * 10 + (*s - '0');
-		if (ret != ((int)ret))
-			return f == 1 ? INT_MAX : INT_MIN;
+		if ((ret > INT_MAX / 10 || (ret == INT_MAX / 10 && (*s - '0') > 7))&&f == 1)
+			return INT_MAX;
+		if ((ret < INT_MIN / 10 || (ret == INT_MIN / 10 && (*s - '0') > 8))&&f == -1)
+			return INT_MIN;
+		ret = ret * 10 + (*s - '0') * f;
 		s++;
 	}
-	ret = ret * f;
-	return (int)ret;
+	return ret;
 }
 
 

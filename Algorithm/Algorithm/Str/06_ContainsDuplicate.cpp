@@ -5,14 +5,15 @@ using namespace std;
 
 bool ContainsDuplicate(int* nums, int numsSize)
 {
-	if (nums[0] == '\0')return false;
-	set<int>s;
+	if (nums[0] == '\0')
+		return false;
+	set<int>my_set;
 	for (int i = 0; i < numsSize; i++)
 	{
-		if (s.count(nums[i]))
+		if (my_set.count(nums[i]))
 			return true;
 		else
-			s.insert(nums[i]);
+			my_set.insert(nums[i]);
 	}
 	return false;
 }
