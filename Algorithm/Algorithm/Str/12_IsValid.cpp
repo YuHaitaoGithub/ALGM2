@@ -17,7 +17,7 @@ bool IsValid(char *s)
 			arr[++point] = '}';
 		else if (point == -1 || s[i] != arr[point])
 			return false;
-			else point--;
+		else point--;
 	}
 	free(arr);
 	return (point == -1);

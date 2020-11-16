@@ -14,7 +14,7 @@ char * ExcelSheetColumnTitle(int n)
 		n /= 26;
 		i++;
 	}
-	i--;
+	--i;
 	char vaules[MAX_LEN] = { '\0' };
 	vaules[0] = '"';
 	for (int j = 0; j <= i; j++)
