@@ -49,7 +49,8 @@ char **RestoreIpAddresses(char * s, int *returnSize)
 	if (strlen(s) == 0)
 		return NULL;
 	int len = strlen(s);
-	if (len > 12||len<4)return NULL;
+	if (len > 12||len < 4)
+		return NULL;
 	char** res = (char**)malloc(sizeof(char*) * 100);
 	if (res == NULL)
 		return NULL;
