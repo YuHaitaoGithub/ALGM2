@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include "..\Include\15_WordPattern.h"
+#include "..\Include\09_AddBinary.h"
 #include "Windows.h"
 #include "stdio.h"
 #include "malloc.h"
@@ -75,5 +75,8 @@ void main()
 	gets(a);
 	gets(b);
 	WordPattern(a, b);*/
+	/*char a[10] = "011";
+	char b[10] = "1";
+	printf("%s",AddBinary(a, b));*/
 
 }

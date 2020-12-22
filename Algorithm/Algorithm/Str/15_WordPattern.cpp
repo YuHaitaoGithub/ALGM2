@@ -34,45 +34,36 @@ bool WordPattern(char * pattern, char * s)
 	return true;
 }
 //
-//bool WordPattern(char * pattern, char * s)
+//bool WordPattern(string pattern, string s)
 //{
-//	int plen = strlen(pattern);
-//	int slen = strlen(s);
-//	if (plen == 0 && slen == 0)
+//	if (pattern.size() == 0 && s.size() == 0)
 //		return true;
-//	if (plen == 0 || slen == 0)
-//		return false;
-//	vector<string>_s;
-//	char *p = NULL;
-//	int value = 0;
-//	p = strtok(s, " ");
-//	_s.push_back(p);
-//	p = strtok(NULL, " ");
-//	while (p != NULL)
+//	stringstream ss(s);
+//	string str;
+//	vector<string>key;
+//	while (ss >> str)
 //	{
-//		_s.push_back(p);
-//		p = strtok(NULL, " ");
+//		key.push_back(str);
 //	}
-//	map<char, string>m;
-//	set<string>se;
-//	m.insert(pair<char,string>(pattern[0], _s[0]));
-//	se.insert(_s[0]);
-//	for (int i = 1; i < plen; i++)
+//	if (key.size() != pattern.size())
+//		return false;
+//	map<char, string>my_map;
+//	my_map[pattern[0]] = key[0];
+//	set<string>my_set({ key[0] });
+//	for (int i = 1; i < pattern.size(); ++i)
 //	{
-//		if (m.count(pattern[i]))
+//		if (my_map.count(pattern[i]))
 //		{
-//			if (m[pattern[i]] != _s[i])
+//			if (my_map[pattern[i]] != key[i])
 //				return false;
 //		}
 //		else
 //		{
-//			if (!se.insert(_s[i]).second)
+//			if (!my_set.insert(key[i]).second)
 //				return false;
-//			else
-//				m.insert(pair<char, string>(pattern[i], _s[i]));
+//			my_map[pattern[i]] = key[i];
 //		}
 //	}
 //	return true;
-//
 //}
 

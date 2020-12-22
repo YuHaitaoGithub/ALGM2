@@ -29,34 +29,28 @@ bool WordBreak(char * s, char ** wordDict, int wordDictSize)
 				break;
 		}
 	bool ret_dp = dp[slen];
-	dp = NULL;
+	
 	free(dp);
+	dp = NULL;
 	return ret_dp;
 
 }
 
-//bool WordBreak(char * s, char ** wordDict, int wordDictSize)
+//bool WordBreak(string s, vector<string>& wordDict)
 //{
-//	if ((0 == strlen(s)) && (NULL == wordDict))
-//		return true;
-//	if ('\0' == s[0])
+//	if (s.size() == 0 && wordDict.size() == 0)
 //		return false;
-//	if (NULL == wordDict)
-//		return false;
-//	int slen = strlen(s);
-//	string ss = s;
-//	set<string>se(wordDict, wordDict + wordDictSize);
-//	bool *dp = (bool*)calloc(slen + 1, 1);
+//	vector<bool>dp(s.size() + 1, false);
 //	dp[0] = true;
-//	int k = 0;
-//	for (int i = 1; i <= slen; i++)
+//	set<string>my_set(wordDict.begin(), wordDict.end());
+//	for (int i = 1; i <= s.size(); ++i)
 //	{
-//		for (int j = i-1; j >= 0; j--)
+//		for (int j = i - 1; j >= 0; --j)
 //		{
-//			dp[i] = dp[j] && se.count(ss.substr(j, i-j));
+//			dp[i] = dp[j] && my_set.count(s.substr(j, i - j));
 //			if (dp[i])
 //				break;
 //		}
 //	}
-//	return dp[slen];
+//	return dp.back();
 //}

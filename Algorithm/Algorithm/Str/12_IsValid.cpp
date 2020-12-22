@@ -41,5 +41,5 @@ bool IsValid(char *s)
 //		else
 //			my_stack.pop();
 //	}
-//	return !my_stack.empty();
+//	return my_stack.empty();
 //}
